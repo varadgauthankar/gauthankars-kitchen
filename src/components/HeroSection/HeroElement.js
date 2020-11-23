@@ -22,7 +22,7 @@ export const HeroContainer = styled.div`
         rgba(0, 0, 0, 0.8),
         rgba(0, 0, 0, 0.6) 100%
       ),
-      linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+      linear-gradient(180deg, rgba(0, 0, 0, 0.6) 100%, transparent 100%);
     z-index: 2;
   }
 `;
@@ -56,10 +56,11 @@ export const HeroContent = styled.div`
   align-items: center;
 `;
 
-export const HeroH1 = styled.h1`
+export const HeroH1 = styled.p`
   color: #ffffff;
   font-size: 48px;
   text-align: center;
+  font-weight: 700;
 
   @media screen and (max-width: 768px) {
     font-size: 40px;
@@ -67,22 +68,25 @@ export const HeroH1 = styled.h1`
 
   @media screen and (max-width: 480px) {
     font-size: 32px;
+    font-weight: 600;
   }
 `;
 
 export const HeroP = styled.p`
   margin-top: 24px;
+  margin-bottom: 24px;
   color: #fff;
   font-size: 24px;
   text-align: center;
   max-width: 600px;
 
   @media screen and (max-width: 768px) {
-    font-size: 32px;
+    font-size: 28px;
   }
 
   @media screen and (max-width: 480px) {
     font-size: 24px;
+    max-width: 300px;
   }
 `;
 

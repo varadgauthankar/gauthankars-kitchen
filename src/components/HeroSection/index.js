@@ -26,17 +26,10 @@ const HeroSection = () => {
         <VideoBg autoPlay loop muted src={Video} type="video/mp4"></VideoBg>
       </HeroBg>
       <HeroContent>
-        <HeroH1>Welcome to gauthankar's Kitchen</HeroH1>
+        <HeroH1>Welcome to Gauthankar's Kitchen</HeroH1>
         <HeroP>Ullamco veniam laboris pariatur minim reprehenderit.</HeroP>
         <HeroBtnWrapper>
-          <Button
-            to="menue"
-            onMouseEnter={onHover}
-            onMouseLeave={onHover}
-            primary="true"
-            dark="true"
-            big="true"
-          >
+          <Button to="menue" onMouseEnter={onHover} onMouseLeave={onHover}>
             View Menue {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </HeroBtnWrapper>
