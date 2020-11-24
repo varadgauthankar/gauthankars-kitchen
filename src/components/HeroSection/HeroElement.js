@@ -8,6 +8,7 @@ export const HeroContainer = styled.div`
   align-items: center;
   padding: 0 30px;
   height: 800px;
+  position: relative;
   z-index: 1;
 
   :before {
@@ -24,14 +25,17 @@ export const HeroContainer = styled.div`
       ),
       linear-gradient(180deg, rgba(0, 0, 0, 0.6) 100%, transparent 100%);
     z-index: 2;
+    z-index: 2;
   }
 `;
 
 export const HeroBg = styled.div`
   position: absolute;
   top: 0;
+  right: 0;
   bottom: 0;
   left: 0;
+  height: 100%;
   width: 100%;
   overflow: hidden;
 `;
@@ -52,7 +56,6 @@ export const HeroContent = styled.div`
   padding: 8px, 24px;
   display: flex;
   flex-direction: column;
-  align-self: center;
   align-items: center;
 `;
 
