@@ -43,16 +43,6 @@ const Navbar = ({ toggle }) => {
       </Nav>
     </>
   );
-
-  //   return (
-  //     <>
-  //       <Nav>
-  //         <NavbarContainer>
-  //           <NavLogo>Logo</NavLogo>
-  //         </NavbarContainer>
-  //       </Nav>
-  //     </>
-  //   );
 };
 
 export default Navbar;
