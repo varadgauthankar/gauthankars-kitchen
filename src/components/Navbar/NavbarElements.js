@@ -61,6 +61,8 @@ export const NavMenue = styled.ul`
   list-style: none;
   text-align: center;
   margin-right: -22px;
+  margin-bottom: 0;
+  text-decoration: none;
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -79,8 +81,9 @@ export const NavLinks = styled(LinkScroll)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
-  &.active {
-    border-bottom: 3px solid #01bf71;
+
+  &:hover {
+    color: #fff;
   }
 `;
 
@@ -94,10 +97,10 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled(LinkRouter)`
   border-radius: 50px;
-  background: #01bf71;
+  background: #f64b4b;
   white-space: nowrap;
   padding: 10px 22px;
-  color: #010606;
+  color: #fff;
   font-size: 16px;
   outline: none;
   border: none;
@@ -108,6 +111,6 @@ export const NavBtnLink = styled(LinkRouter)`
   &:hover {
     transition: all 0.2 ease-in-out;
     background: #fff;
-    color: #010606;
+    color: #212121;
   }
 `;
