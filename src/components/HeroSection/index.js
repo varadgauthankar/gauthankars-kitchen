@@ -1,5 +1,6 @@
 import React from "react";
 import Video from "../../videos/video.mp4";
+import logo from "../../images/logo.png";
 import { Button } from "../ButtonElement";
 import Spacer from "../Spacer";
 import {
@@ -20,13 +21,11 @@ const Hero = () => {
       </HeroBg>
 
       <ContentWrap>
-        <LogoVideo>G</LogoVideo>
+        <LogoVideo src={logo} />
         <HeadLine>Welcome To Gauthankar's Kitchen</HeadLine>
         <TagLine>Food For The Soul</TagLine>
         <Spacer height={12} />
-        <Button primary="true" to="/menue">
-          View Menue
-        </Button>
+        <Button to="/menue">View Menue</Button>
       </ContentWrap>
     </HeroContainer>
   );
