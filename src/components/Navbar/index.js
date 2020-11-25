@@ -33,7 +33,9 @@ const Navbar = ({ toggle }) => {
               <NavLinks to="gallery">Gallery</NavLinks>
             </NavItems>
             <NavItems>
-              <NavLinks to="locate">Locate</NavLinks>
+              <NavLinks to="locate" smooth={true} duration={600} offset={-80}>
+                Locate
+              </NavLinks>
             </NavItems>
           </NavMenue>
           <NavBtn>

@@ -18,7 +18,7 @@ import Location from "../../images/brr.jpg";
 
 const Locate = () => {
   return (
-    <HeroContainer>
+    <HeroContainer id="locate">
       <Wrapper>
         <LocateContentRow>
           <Column1>
