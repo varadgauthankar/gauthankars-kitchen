@@ -37,9 +37,10 @@ export const BgVideo = styled.video`
   filter: brightness(20%);
 `;
 
-export const LogoVideo = styled.h1`
-  font-size: 98px;
-  color: #fff;
+export const LogoVideo = styled.img`
+  /* font-size: 98px; */
+  /* color: #fff; */
+  height: 20vh;
   text-align: center;
 `;
 
