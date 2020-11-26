@@ -15,7 +15,7 @@ import {
 
 const Hero = () => {
   return (
-    <HeroContainer>
+    <HeroContainer id="home">
       <HeroBg>
         <BgVideo autoPlay loop muted src={Video} type="video/mp4" />
       </HeroBg>

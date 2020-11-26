@@ -6,9 +6,10 @@ import {
   SideBarWrapper,
   SideBarLink,
   SideBtnWrap,
-  SideBarRoute,
   SideBarMenue,
 } from "./SidebarElements";
+
+import { Button } from "../ButtonElement";
 
 const SideBar = ({ isOpen, toggle }) => {
   // console.log(toggle);
@@ -19,9 +20,6 @@ const SideBar = ({ isOpen, toggle }) => {
       </Icon>
       <SideBarWrapper>
         <SideBarMenue>
-          <SideBarLink to="home" onClick={toggle}>
-            Home
-          </SideBarLink>
           <SideBarLink to="contact" onClick={toggle}>
             Contact
           </SideBarLink>
@@ -29,14 +27,13 @@ const SideBar = ({ isOpen, toggle }) => {
             Gallery
           </SideBarLink>
           <SideBarLink to="locate" onClick={toggle}>
-            {" "}
             Locate
           </SideBarLink>
         </SideBarMenue>
         <SideBtnWrap>
-          <SideBarRoute to="/menue" onClick={toggle}>
+          <Button to="/menue" onClick={toggle}>
             Menue
-          </SideBarRoute>
+          </Button>
         </SideBtnWrap>
       </SideBarWrapper>
     </SideBarContainer>

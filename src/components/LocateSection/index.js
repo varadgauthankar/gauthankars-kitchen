@@ -18,14 +18,14 @@ import Location from "../../images/brr.jpg";
 
 const Locate = () => {
   return (
-    <HeroContainer>
+    <HeroContainer id="locate">
       <Wrapper>
         <LocateContentRow>
           <Column1>
             <Heading>Locate us</Heading>
             <Address>Adress here lorem ipsum dolor sit 1234</Address>
             <BtnWrap>
-              <Button to="/">
+              <Button to="/direction" target="_blank">
                 Direction <DirectionIcon />
               </Button>
             </BtnWrap>
@@ -37,7 +37,7 @@ const Locate = () => {
           </Column2>
         </LocateContentRow>
         <BtnWrap2>
-          <Button to="/">
+          <Button to="/direction" target="_blank">
             Direction <DirectionIcon />
           </Button>
         </BtnWrap2>

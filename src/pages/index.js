@@ -6,6 +6,7 @@ import Locate from "../components/LocateSection";
 // import { HomeObjOne, HomeObjTwo } from "../components/InfoSection/Data";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
+import Special from "../components/SpecialSection";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,6 +22,7 @@ const Home = () => {
       <Navbar toggle={toggle} />
       <Hero />
       <Locate />
+      <Special />
     </>
   );
 };
