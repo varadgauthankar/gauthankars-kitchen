@@ -10,12 +10,15 @@ import {
   Heading,
   FoodCard,
   FoodImg,
+  FoodCardWrapper,
+  ImageText,
+  ItemName,
 } from "./SpecialSectionElements";
 
 import Img1 from "../../images/1.jpg";
 import Img2 from "../../images/2.jpg";
 import Img3 from "../../images/3.jpg";
-const Special = () => {
+const Special = ({ toggle }) => {
   return (
     <HeroContainer id="special">
       <Wrapper>
@@ -23,19 +26,29 @@ const Special = () => {
 
         <ContentRow>
           <Column1>
-            <FoodCard>
-              <FoodImg src={Img1} />
-            </FoodCard>
+            <FoodCardWrapper>
+              <FoodCard>
+                <FoodImg src={Img1} />
+
+                <ImageText>Lorem doler</ImageText>
+              </FoodCard>
+            </FoodCardWrapper>
           </Column1>
           <Column2>
-            <FoodCard>
-              <FoodImg src={Img2} />
-            </FoodCard>
+            <FoodCardWrapper>
+              <FoodCard>
+                <FoodImg src={Img2} />
+                <ImageText>Lorem ipsum</ImageText>
+              </FoodCard>
+            </FoodCardWrapper>
           </Column2>
           <Column3>
-            <FoodCard>
-              <FoodImg src={Img3} />
-            </FoodCard>
+            <FoodCardWrapper>
+              <FoodCard>
+                <FoodImg src={Img3} />
+                <ImageText>Sit lorem doler</ImageText>
+              </FoodCard>
+            </FoodCardWrapper>
           </Column3>
         </ContentRow>
       </Wrapper>

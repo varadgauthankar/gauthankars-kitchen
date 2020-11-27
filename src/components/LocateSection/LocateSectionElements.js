@@ -20,6 +20,15 @@ export const Wrapper = styled.div`
   margin-left: auto;
   padding: 0 24px;
   text-align: center;
+  margin-bottom: 100px;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 0;
+  }
+  @media screen and (max-width: 350px) {
+    margin-top: 50px;
+  }
+
   /* justify-content: space-around; */
 `;
 
@@ -52,6 +61,10 @@ export const Heading = styled.p`
   @media screen and (min-width: 768px) {
     text-align: left;
   }
+
+  @media screen and (max-width: 350px) {
+    font-size: 28px;
+  }
 `;
 
 export const Address = styled.p`
@@ -62,16 +75,24 @@ export const Address = styled.p`
   @media screen and (min-width: 768px) {
     text-align: left;
   }
+
+  @media screen and (max-width: 350px) {
+    font-size: 20px;
+  }
 `;
 
 export const LocationImgWrap = styled.div`
   height: 35vh;
   width: 450px;
-  margin: 38px auto;
+  margin: 30px auto;
   @media screen and (max-width: 500px) {
     height: 30vh;
     width: 80vw;
-  } ;
+  }
+
+  @media screen and (max-width: 350px) {
+    margin: 20px auto;
+  }
 `;
 
 export const LocationMap = styled.img`
@@ -80,6 +101,12 @@ export const LocationMap = styled.img`
   width: 100%;
   object-fit: cover;
   text-align: center;
+  border-radius: 12px;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.6);
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.6);
+  }
 `;
 
 export const BtnWrap = styled.div`

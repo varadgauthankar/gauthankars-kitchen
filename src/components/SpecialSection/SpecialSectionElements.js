@@ -17,6 +17,12 @@ export const Wrapper = styled.div`
   margin-left: auto;
   padding: 0 24px;
   text-align: center;
+  margin-bottom: 100px;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 0;
+    margin-top: 60px;
+  }
 `;
 
 export const ContentRow = styled.div`
@@ -35,7 +41,7 @@ export const Heading = styled.p`
   font-size: 32px;
   font-weight: 700;
   color: #fff;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   @media screen and (max-width: 768px) {
     font-size: 28px;
     font-weight: 600;
@@ -64,13 +70,21 @@ export const Column3 = styled.div`
   text-align: center;
 `;
 
+export const FoodCardWrapper = styled.div`
+  margin: 15px;
+  @media screen and (max-width: 768px) {
+    margin: 8px 0;
+  }
+`;
+
 export const FoodCard = styled.div`
-  height: 200px;
+  height: 250px;
   width: 100%;
   border-radius: 12px;
   text-align: center;
   background: #000;
-
+  position: relative;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
   @media screen and (max-width: 768px) {
     width: 100%;
     height: 20vh;
@@ -84,6 +98,21 @@ export const FoodCard = styled.div`
     margin-left: auto;
     margin-right: auto;
   }
+
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.6);
+    font-size: 24px;
+  }
+`;
+
+export const ImageText = styled.p`
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 `;
 
 export const FoodImg = styled.img`
@@ -92,4 +121,5 @@ export const FoodImg = styled.img`
   height: 100%;
   background: #eee;
   border-radius: 12px;
+  filter: brightness(30%);
 `;
