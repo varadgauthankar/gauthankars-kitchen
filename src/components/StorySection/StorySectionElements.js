@@ -45,3 +45,72 @@ export const Column2 = styled.div`
   grid-area: col2;
   text-align: center;
 `;
+
+export const ImageWrapper = styled.div`
+  width: 400px;
+  height: 250px;
+  margin: 12px auto;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    height: 26vh;
+  }
+
+  @media screen and (max-width: 350px) {
+    width: 100%;
+    height: 22vh;
+    margin: 8px auto;
+  }
+`;
+export const Image = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+`;
+
+export const TextWrapper = styled.div`
+  padding: 12px;
+`;
+
+export const Heading = styled.p`
+  font-size: 32px;
+  text-align: center;
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 8px;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+`;
+
+export const HeadingMobile = styled.p`
+  font-size: 32px;
+  text-align: center;
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  @media screen and (max-width: 350px) {
+    margin-bottom: 4px;
+
+    font-size: 28px;
+    font-weight: 600;
+  }
+`;
+export const StoryText = styled.p`
+  font-size: 18px;
+  text-align: center;
+  color: #000;
+
+  @media screen and (max-width: 350px) {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+`;

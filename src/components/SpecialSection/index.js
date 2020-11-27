@@ -12,7 +12,6 @@ import {
   FoodImg,
   FoodCardWrapper,
   ImageText,
-  ItemName,
 } from "./SpecialSectionElements";
 
 import Img1 from "../../images/1.jpg";

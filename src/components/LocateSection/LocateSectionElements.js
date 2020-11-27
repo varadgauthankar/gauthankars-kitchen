@@ -55,11 +55,11 @@ export const Column2 = styled.div`
 
 export const Heading = styled.p`
   color: #212121;
-  text-align: center;
+  text-align: left;
   font-size: 32px;
   font-weight: 700;
-  @media screen and (min-width: 768px) {
-    text-align: left;
+  @media screen and (max-width: 768px) {
+    text-align: center;
   }
 
   @media screen and (max-width: 350px) {
@@ -69,11 +69,11 @@ export const Heading = styled.p`
 
 export const Address = styled.p`
   color: #212121;
-  text-align: center;
+  text-align: left;
   font-size: 24px;
 
-  @media screen and (min-width: 768px) {
-    text-align: left;
+  @media screen and (max-width: 768px) {
+    text-align: center;
   }
 
   @media screen and (max-width: 350px) {
@@ -111,11 +111,11 @@ export const LocationMap = styled.img`
 
 export const BtnWrap = styled.div`
   text-align: center;
-  display: none;
-  @media screen and (min-width: 768px) {
-    margin-top: 20px;
-    text-align: left;
-    display: block;
+  margin-top: 20px;
+  text-align: left;
+  display: block;
+  @media screen and (max-width: 768px) {
+    display: none;
   }
 `;
 
@@ -123,8 +123,9 @@ export const BtnWrap2 = styled.div`
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  @media screen and (min-width: 768px) {
-    display: none;
+  display: none;
+  @media screen and (max-width: 768px) {
+    display: block;
   }
 `;
 
