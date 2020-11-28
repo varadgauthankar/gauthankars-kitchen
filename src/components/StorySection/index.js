@@ -11,14 +11,14 @@ import {
   HeadingMobile,
   StoryText,
   TextWrapper,
-} from "../StorySection/StorySectionElements";
+} from "./StorySectionElements";
 import imgf from "../../images/1.jpg";
 
 const Story = () => {
   return (
-    <HeroContainer id="story">
+    <HeroContainer id="about">
       <Wrapper>
-        <HeadingMobile>Our Story</HeadingMobile>
+        <HeadingMobile>About Us</HeadingMobile>
         <ContentRow>
           <Column1>
             <ImageWrapper>

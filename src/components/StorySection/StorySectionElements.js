@@ -68,10 +68,16 @@ export const Image = styled.img`
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+
+  &:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+  }
 `;
 
 export const TextWrapper = styled.div`
   padding: 12px;
+  margin-bottom: 22px;
 `;
 
 export const Heading = styled.p`
