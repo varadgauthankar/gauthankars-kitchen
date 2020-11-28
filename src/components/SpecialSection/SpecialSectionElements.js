@@ -103,6 +103,7 @@ export const FoodCard = styled.div`
     transform: scale(1.1);
     box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.6);
     font-size: 24px;
+    transition: 0.2s ease-in-out;
   }
 `;
 
