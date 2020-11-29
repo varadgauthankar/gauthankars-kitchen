@@ -10,7 +10,7 @@ import {
   Wrapper,
   Text,
   FormContainer,
-  Form,
+  //   Form,
   Input,
   TextArea,
   Button,
@@ -71,7 +71,7 @@ const GetInTouch = () => {
           <Column2>
             <FormContainer>
               <FormTitle>Contact Us</FormTitle>
-              <Form name="contact" action="/contact" method="post">
+              <form name="contact" action="/contact" method="post">
                 <input type="hidden" name="form-name" value="contact" />
                 <Input required type="email" name="email" placeholder="Email" />
                 <Input required type="text" name="name" placeholder="Name" />
@@ -81,7 +81,7 @@ const GetInTouch = () => {
                   placeholder="Message"
                 ></TextArea>
                 <Button type="submit">Send</Button>
-              </Form>
+              </form>
             </FormContainer>
           </Column2>
         </Row>
