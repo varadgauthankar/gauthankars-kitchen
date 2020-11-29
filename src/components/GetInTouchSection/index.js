@@ -50,7 +50,7 @@ const GetInTouch = () => {
           </Column1>
           <Column2>
             <FormContainer>
-              <form name="contact" netlify>
+              <form name="contact" method="POST" netlify>
                 <p>
                   <label>
                     Name <input type="text" name="name" />
@@ -59,6 +59,11 @@ const GetInTouch = () => {
                 <p>
                   <label>
                     Email <input type="email" name="email" />
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    Message <input type="test" name="message" />
                   </label>
                 </p>
                 <p>
