@@ -10,7 +10,8 @@ function App() {
       <Switch>
         <Route path="/" component={Home} exact />
         <Route path="/menue" component={MenuePage} exact />
-        <Route path="/direction" component={Direction} exact/>
+        <Route path="/direction" component={Direction} exact />
+        <Route path="/form-submitted" component={Direction} exact />
       </Switch>
     </Router>
   );

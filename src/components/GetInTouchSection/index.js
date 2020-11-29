@@ -71,7 +71,7 @@ const GetInTouch = () => {
           <Column2>
             <FormContainer>
               <FormTitle>Contact Us</FormTitle>
-              <form name="contact" action="/contact" method="post">
+              <form name="contact" action="/form-submitted" method="post">
                 <input type="hidden" name="form-name" value="contact" />
                 <Input required type="email" name="email" placeholder="Email" />
                 <Input required type="text" name="name" placeholder="Name" />
