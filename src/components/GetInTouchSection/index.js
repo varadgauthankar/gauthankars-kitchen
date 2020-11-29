@@ -19,6 +19,29 @@ import {
 } from "react-icons/fa";
 
 const GetInTouch = () => {
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  };
+  function handleFormSubmit(event) {
+    event.preventDefault();
+    const data = [...event.target.elements]
+      .filter((element) => Boolean(element.name))
+      .reduce((json, element) => {
+        json[element.name] = element.value;
+        return json;
+      }, {});
+    fetch(event.target.action, {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode(data),
+    })
+      .then(() => alert("Success!"))
+      .catch((error) => alert(error));
+  }
   return (
     <HeroContainer>
       <Wrapper>
@@ -54,27 +77,33 @@ const GetInTouch = () => {
                 name="contact"
                 method="POST"
                 data-netlify="true"
-                enctype="application/x-www-form-urlencoded"
+                netlify-honeypot="bot-field"
+                onSubmit={handleFormSubmit}
               >
-                <p>
-                  <label>
-                    Your Name: <input type="text" name="name" />
-                  </label>
-                </p>
-                <p>
-                  <label>
-                    Your Email: <input type="email" name="email" />
-                  </label>
-                </p>
-
-                <p>
-                  <label>
-                    Message: <textarea name="message"></textarea>
-                  </label>
-                </p>
-                <p>
-                  <button type="submit">Send</button>
-                </p>
+                <div className="form-group">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="name"
+                    className="form-control"
+                  />
+                  <input
+                    type="email"
+                    placeholder="email"
+                    name="email"
+                    className="form-control"
+                  />
+                  <textarea
+                    name="message"
+                    rows="5"
+                    placeholder="message"
+                    className="form-control"
+                  ></textarea>
+                  <div data-netlify-recaptcha="true"></div>
+                </div>
+                <button type="submit" className="submit-btn btn">
+                  send me your message
+                </button>
               </form>
             </FormContainer>
           </Column2>

@@ -74,4 +74,4 @@ export const FormContainer = styled.div`
   width: 400px;
 `;
 
-export const Form = styled.form``;
+export const Form = styled.div``;
