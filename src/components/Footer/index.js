@@ -68,13 +68,13 @@ const Footer = () => {
           </Column2>
           <Column3>
             <Title>Social Media</Title>
-            <LinkA href="instagram.com">
+            <LinkA href="https://instagram.com" target="_blank">
               <Icon>
                 <Insta />
               </Icon>
               Instagram
             </LinkA>
-            <LinkA href="facebook.com">
+            <LinkA href="https://facebook.com" target="_blank">
               <Icon>
                 <Fb />
               </Icon>
