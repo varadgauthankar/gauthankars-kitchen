@@ -19,29 +19,6 @@ import {
 } from "react-icons/fa";
 
 const GetInTouch = () => {
-  const encode = (data) => {
-    return Object.keys(data)
-      .map(
-        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-      )
-      .join("&");
-  };
-  function handleFormSubmit(event) {
-    event.preventDefault();
-    const data = [...event.target.elements]
-      .filter((element) => Boolean(element.name))
-      .reduce((json, element) => {
-        json[element.name] = element.value;
-        return json;
-      }, {});
-    fetch(event.target.action, {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode(data),
-    })
-      .then(() => alert("Success!"))
-      .catch((error) => alert(error));
-  }
   return (
     <HeroContainer>
       <Wrapper>
@@ -73,37 +50,28 @@ const GetInTouch = () => {
           </Column1>
           <Column2>
             <FormContainer>
-              <form
-                name="contact"
-                method="POST"
-                data-netlify="true"
-                netlify-honeypot="bot-field"
-                onSubmit={handleFormSubmit}
-              >
-                <div className="form-group">
-                  <input
-                    type="text"
-                    name="name"
-                    placeholder="name"
-                    className="form-control"
-                  />
-                  <input
-                    type="email"
-                    placeholder="email"
-                    name="email"
-                    className="form-control"
-                  />
-                  <textarea
-                    name="message"
-                    rows="5"
-                    placeholder="message"
-                    className="form-control"
-                  ></textarea>
-                  <div data-netlify-recaptcha="true"></div>
-                </div>
-                <button type="submit" className="submit-btn btn">
-                  send me your message
-                </button>
+              <form name="contact" action="/contact" method="post">
+                <input type="hidden" name="form-name" value="contact" />
+                <input
+                  required
+                  type="email"
+                  name="email"
+                  placeholder="your email"
+                />
+                <input
+                  required
+                  type="text"
+                  name="name"
+                  placeholder="your name"
+                />
+                <textarea
+                  required
+                  name="message"
+                  placeholder="message"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+                <button type="submit">Send</button>
               </form>
             </FormContainer>
           </Column2>
