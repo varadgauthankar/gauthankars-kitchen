@@ -10,17 +10,27 @@ import {
   Wrapper,
   Text,
   FormContainer,
+  Form,
+  Input,
+  TextArea,
+  Button,
+  SocialWrap,
+  SocialIcon,
+  SocialTitle,
+  FormTitle,
 } from "./GetInTouchElements";
 
 import {
   FaMapMarkerAlt as Map,
   FaPhoneAlt as Call,
   FaEnvelope as Mail,
+  FaInstagram as Insta,
+  FaFacebookF as Fb,
 } from "react-icons/fa";
 
 const GetInTouch = () => {
   return (
-    <HeroContainer>
+    <HeroContainer id="contact">
       <Wrapper>
         <Row>
           <Column1>
@@ -47,32 +57,31 @@ const GetInTouch = () => {
                 adress lorem ipsum dolo sit
               </Text>
             </ContentWrap>
+
+            <SocialWrap>
+              <SocialTitle>Connect with us</SocialTitle>
+              <SocialIcon>
+                <Insta color="#E1306C" />
+              </SocialIcon>
+              <SocialIcon>
+                <Fb color="4267B2" />
+              </SocialIcon>
+            </SocialWrap>
           </Column1>
           <Column2>
             <FormContainer>
-              <form name="contact" action="/contact" method="post">
+              <FormTitle>Contact Us</FormTitle>
+              <Form name="contact" action="/contact" method="post">
                 <input type="hidden" name="form-name" value="contact" />
-                <input
-                  required
-                  type="email"
-                  name="email"
-                  placeholder="your email"
-                />
-                <input
-                  required
-                  type="text"
-                  name="name"
-                  placeholder="your name"
-                />
-                <textarea
+                <Input required type="email" name="email" placeholder="Email" />
+                <Input required type="text" name="name" placeholder="Name" />
+                <TextArea
                   required
                   name="message"
-                  placeholder="message"
-                  cols="30"
-                  rows="10"
-                ></textarea>
-                <button type="submit">Send</button>
-              </form>
+                  placeholder="Message"
+                ></TextArea>
+                <Button type="submit">Send</Button>
+              </Form>
             </FormContainer>
           </Column2>
         </Row>
