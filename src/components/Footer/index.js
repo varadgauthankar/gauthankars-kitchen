@@ -32,24 +32,24 @@ const Footer = () => {
           </Column0>
           <Column1>
             <Title>Contact Us</Title>
-            <LinkS href="#story">
+            <LinkA href="story">
               <Icon>
                 <Map />
               </Icon>
               adress
-            </LinkS>
-            <LinkS href="#story">
+            </LinkA>
+            <LinkA href="#story">
               <Icon>
                 <Mail />
               </Icon>
               contact@gauthankarskithen.com
-            </LinkS>
-            <LinkS href="#story">
+            </LinkA>
+            <LinkA href="#story">
               <Icon>
                 <Call />
               </Icon>
               1212121212
-            </LinkS>
+            </LinkA>
           </Column1>
           <Column2>
             <Title>About Us</Title>

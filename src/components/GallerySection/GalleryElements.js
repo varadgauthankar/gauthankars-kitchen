@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HeroContainer = styled.div`
-  background: #212121;
+  background: #414141;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,8 +13,7 @@ export const Wrapper = styled.div`
   z-index: 1;
   width: 100%;
   max-width: 1100px;
-  margin-right: auto;
-  margin-left: auto;
+
   padding: 0 24px;
   text-align: center;
   margin-bottom: 100px;
@@ -24,30 +23,40 @@ export const Wrapper = styled.div`
     margin-top: 60px;
   } */
 `;
+export const Heading = styled.div`
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 30px;
+`;
 
 export const Grid = styled.div`
-  margin: 0 auto;
   align-items: center;
   display: grid;
-  grid-template-areas: "col1 col2 col3 col4" "col5 col6 col7 col8";
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+
   @media screen and (max-width: 768px) {
-    grid-template-areas: "col1 col2" "col3 col4" "col5 col6" "col7 col8";
+    grid-template-columns: repeat(2, 1fr);
   }
 `;
 
 export const PicWrap = styled.div`
   text-align: center;
-  grid-area: ${(props) => props.col};
-  margin: 4px 4px;
   background: #eee;
-  height: 20vh;
-  width: 20vh;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 2px 2px 4px #212121;
 `;
 
 export const Image = styled.img`
   height: 100%;
-
   width: 100%;
-
   object-fit: cover;
+  cursor: pointer;
+  &:hover {
+    transition: all 200ms ease-out;
+    transform: scale(1.1);
+  }
 `;

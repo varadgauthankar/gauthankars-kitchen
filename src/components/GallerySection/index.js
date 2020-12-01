@@ -5,6 +5,7 @@ import {
   Image,
   Grid,
   PicWrap,
+  Heading,
 } from "./GalleryElements";
 
 import Pic from "../../images/3.jpg";
@@ -13,29 +14,25 @@ const Gallery = () => {
   return (
     <HeroContainer id="gallery">
       <Wrapper>
+        <Heading>Gallery</Heading>
+
         <Grid>
-          <PicWrap col="col1">
+          <PicWrap>
             <Image src={Pic} />
           </PicWrap>
-          <PicWrap col="col2">
+          <PicWrap>
             <Image src={Pic} />
           </PicWrap>
-          <PicWrap col="col3">
+          <PicWrap>
             <Image src={Pic} />
           </PicWrap>
-          <PicWrap col="col4">
+          <PicWrap>
             <Image src={Pic} />
           </PicWrap>
-          <PicWrap col="col5">
+          <PicWrap>
             <Image src={Pic} />
           </PicWrap>
-          <PicWrap col="col6">
-            <Image src={Pic} />
-          </PicWrap>
-          <PicWrap col="col7">
-            <Image src={Pic} />
-          </PicWrap>
-          <PicWrap col="col8">
+          <PicWrap>
             <Image src={Pic} />
           </PicWrap>
         </Grid>

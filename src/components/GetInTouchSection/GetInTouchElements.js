@@ -10,7 +10,7 @@ export const HeroContainer = styled.div`
 `;
 
 export const Wrapper = styled.div`
-  z-index: 1;
+  /* z-index: 1; */
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
