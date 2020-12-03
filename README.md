@@ -1,3 +1,3 @@
-##Website for Gauthankars Kitchen.
+## Website for Gauthankars Kitchen.
 
-<a href="https://gauthankarskitchen.netlify.app">Gauthankars Kitchen</a>
+[Gauthankars Kitchen](https://gauthankarskitchen.netlify.app)
