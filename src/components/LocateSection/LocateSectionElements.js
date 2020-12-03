@@ -85,6 +85,9 @@ export const LocationImgWrap = styled.div`
   height: 35vh;
   width: 450px;
   margin: 30px auto;
+  overflow: hidden;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
   @media screen and (max-width: 500px) {
     height: 30vh;
     width: 80vw;
@@ -102,11 +105,9 @@ export const LocationMap = styled.img`
   object-fit: cover;
   text-align: center;
   border-radius: 12px;
-  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.6);
   &:hover {
     transition: 0.2s ease-in-out;
     transform: scale(1.1);
-    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.6);
   }
 `;
 

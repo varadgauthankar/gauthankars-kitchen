@@ -95,7 +95,8 @@ export const FormContainer = styled.div`
   background: #313131;
   padding: 18px 22px;
   display: block;
-  width: 500px;
+  width: 450px;
+  
   /* display: none; */
 
   @media screen and (max-width: 768px) {
