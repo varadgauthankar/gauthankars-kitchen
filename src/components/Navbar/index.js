@@ -13,10 +13,11 @@ import {
   NavLogoImg,
 } from "./NavbarElements";
 
-import logo_flame from "../../images/logo/gauthankars_kitchen_flame.svg";
+import logo_flame from "../../images/logo/logo_flame.png";
 
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
+
   const changeNav = () => {
     if (window.scrollY >= 80) {
       setScrollNav(true);
