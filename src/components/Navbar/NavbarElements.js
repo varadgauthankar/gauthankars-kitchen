@@ -41,6 +41,10 @@ export const NavLogo = styled(LinkRouter)`
   text-decoration: none;
 `;
 
+export const NavLogoImg = styled.img`
+  height: 70px;
+`;
+
 export const MobileIcon = styled.div`
   display: none;
   @media screen and (max-width: 768px) {

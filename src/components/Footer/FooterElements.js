@@ -92,10 +92,17 @@ export const Title = styled.p`
   color: #fff;
   font-weight: 700;
 `;
+export const LogoFull = styled.img`
+  display: none;
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
+`;
 
-export const Logo = styled.div`
-  font-size: 32px;
-  color: #fff;
+export const Logo = styled.img`
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const Icon = styled.i`

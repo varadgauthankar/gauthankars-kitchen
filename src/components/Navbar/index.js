@@ -10,7 +10,10 @@ import {
   NavMenue,
   NavBtn,
   NavBtnLink,
+  NavLogoImg,
 } from "./NavbarElements";
+
+import logo_flame from "../../images/logo/gauthankars_kitchen_flame.svg";
 
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
@@ -29,7 +32,9 @@ const Navbar = ({ toggle }) => {
     <>
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
-          <NavLogo to="/">Logo</NavLogo>
+          <NavLogo to="/">
+            <NavLogoImg src={logo_flame} />
+          </NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
