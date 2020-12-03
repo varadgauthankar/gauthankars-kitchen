@@ -37,17 +37,6 @@ const Navbar = ({ toggle }) => {
           <NavMenue>
             <NavItems>
               <NavLinks
-                to="contact"
-                smooth={true}
-                duration={600}
-                spy={true}
-                offset={-80}
-              >
-                Contact
-              </NavLinks>
-            </NavItems>
-            <NavItems>
-              <NavLinks
                 to="about"
                 smooth={true}
                 duration={600}
@@ -57,6 +46,7 @@ const Navbar = ({ toggle }) => {
                 About Us
               </NavLinks>
             </NavItems>
+
             <NavItems>
               <NavLinks
                 to="special"
@@ -68,17 +58,7 @@ const Navbar = ({ toggle }) => {
                 Our Special
               </NavLinks>
             </NavItems>
-            <NavItems>
-              <NavLinks
-                to="gallery"
-                smooth={true}
-                duration={600}
-                spy={true}
-                offset={-80}
-              >
-                Gallery
-              </NavLinks>
-            </NavItems>
+
             <NavItems>
               <NavLinks
                 to="locate"
@@ -90,6 +70,30 @@ const Navbar = ({ toggle }) => {
                 Locate
               </NavLinks>
             </NavItems>
+
+            <NavItems>
+              <NavLinks
+                to="contact"
+                smooth={true}
+                duration={600}
+                spy={true}
+                offset={-80}
+              >
+                Contact
+              </NavLinks>
+            </NavItems>
+
+            {/* <NavItems>
+              <NavLinks
+                to="gallery"
+                smooth={true}
+                duration={600}
+                spy={true}
+                offset={-80}
+              >
+                Gallery
+              </NavLinks>
+            </NavItems> */}
           </NavMenue>
           <NavBtn>
             <NavBtnLink to="/menue">Menue</NavBtnLink>

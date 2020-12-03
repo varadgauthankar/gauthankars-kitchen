@@ -25,10 +25,10 @@ const Home = () => {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <Hero />
-      <Locate />
-      <Special />
       <Story />
-      <Gallery />
+      <Special />
+      {/* <Gallery /> */}
+      <Locate />
       <GetInTouch />
       <Footer />
     </>

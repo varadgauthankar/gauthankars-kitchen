@@ -85,6 +85,7 @@ export const FoodCard = styled.div`
   background: #000;
   position: relative;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
   @media screen and (max-width: 768px) {
     width: 100%;
     height: 20vh;
@@ -98,13 +99,6 @@ export const FoodCard = styled.div`
     margin-left: auto;
     margin-right: auto;
   }
-
-  &:hover {
-    transform: scale(1.1);
-    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.6);
-    font-size: 24px;
-    transition: 0.2s ease-in-out;
-  }
 `;
 
 export const ImageText = styled.p`
@@ -114,6 +108,7 @@ export const ImageText = styled.p`
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  pointer-events: none;
 `;
 
 export const FoodImg = styled.img`
@@ -123,4 +118,10 @@ export const FoodImg = styled.img`
   background: #eee;
   border-radius: 12px;
   filter: brightness(30%);
+  &:hover {
+    transform: scale(1.1);
+
+    font-size: 24px;
+    transition: 0.2s ease-in-out;
+  }
 `;
