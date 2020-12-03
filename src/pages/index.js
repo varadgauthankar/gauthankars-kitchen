@@ -10,7 +10,7 @@ import Special from "../components/SpecialSection";
 import Story from "../components/StorySection";
 import Footer from "../components/Footer";
 import GetInTouch from "../components/GetInTouchSection";
-import Gallery from "../components/GallerySection";
+// import Gallery from "../components/GallerySection"; //! gallery section
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
