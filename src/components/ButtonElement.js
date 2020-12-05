@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 
 export const Button = styled(Link)`
   border-radius: 50px;
-  background: #f64b4b;
+  background: #ff2929;
   white-space: nowrap;
 
   padding: 14px 30px;
-  color: #212121;
+  color: #000;
   font-size: 20px;
   outline: none;
   border: none;
@@ -20,6 +20,6 @@ export const Button = styled(Link)`
     transition: all 0.2s ease-in-out;
     color: #212121;
     background: #fff;
-    box-shadow: 2px 2px 8px rgba(246, 75, 75, 0.3);
+    box-shadow: 2px 2px 8px rgba(255, 41, 41, 0.4);
   }
 `;

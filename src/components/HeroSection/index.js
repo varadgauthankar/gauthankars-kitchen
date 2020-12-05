@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import Video from "../../videos/video.mp4";
 import logo from "../../images/logo.png";
 import { Button } from "../ButtonElement";
 import Spacer from "../Spacer";
+import styled from "styled-components";
 import {
   BgVideo,
   ContentWrap,
@@ -13,7 +14,13 @@ import {
   TagLine,
 } from "./HeroSectionElements";
 
+import { FaChevronRight, FaArrowRight } from "react-icons/fa";
+
 const Hero = () => {
+  const [hover, setHover] = useState(false);
+  const onHover = () => {
+    setHover(!hover);
+  };
   return (
     <HeroContainer id="home">
       <HeroBg>
@@ -25,10 +32,25 @@ const Hero = () => {
         <HeadLine>Welcome To Gauthankar's Kitchen</HeadLine>
         <TagLine>Food For The Soul</TagLine>
         <Spacer height={12} />
-        <Button to="/menue">View Menue</Button>
+        <Button to="/menue" onMouseEnter={onHover} onMouseLeave={onHover}>
+          View Menue {hover ? <ArrowRightHover /> : <ArrowRight />}
+        </Button>
       </ContentWrap>
     </HeroContainer>
   );
 };
+
+export const ArrowRight = styled(FaChevronRight)`
+  margin-left: 8px;
+  margin-bottom: 4px;
+  vertical-align: middle;
+  font-size: 24px;
+`;
+export const ArrowRightHover = styled(FaArrowRight)`
+  margin-left: 8px;
+  margin-bottom: 4px;
+  vertical-align: middle;
+  font-size: 24px;
+`;
 
 export default Hero;

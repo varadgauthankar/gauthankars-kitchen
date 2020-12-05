@@ -84,7 +84,8 @@ export const FoodCard = styled.div`
   text-align: center;
   background: #000;
   position: relative;
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+
   overflow: hidden;
   @media screen and (max-width: 768px) {
     width: 100%;

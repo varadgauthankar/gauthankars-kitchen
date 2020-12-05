@@ -96,7 +96,7 @@ export const FormContainer = styled.div`
   padding: 18px 22px;
   display: block;
   width: 450px;
-  
+
   /* display: none; */
 
   @media screen and (max-width: 768px) {
@@ -131,7 +131,7 @@ export const Form = styled.div``;
 export const Input = styled.input`
   border-radius: 8px;
   width: 100%;
-  border: 2px solid #f64b4b;
+  border: 2px solid #ff2929;
   background: none;
   padding: 6px 12px;
   color: #fff;
@@ -149,7 +149,7 @@ export const TextArea = styled.textarea`
   border-radius: 8px;
   width: 100%;
   height: 10vh;
-  border: 2px solid #f64b4b;
+  border: 2px solid #ff2929;
   background: none;
   padding: 6px 12px;
   color: #fff;
@@ -169,11 +169,11 @@ export const Button = styled.button`
   margin: 0;
   padding: 10px 12px;
   border-radius: 8px;
-  background: #fb4b4b;
+  background: #ff2929;
   cursor: pointer;
   outline: none;
   border: none;
-  color: #fff;
+  color: #000;
   font-size: 16px;
   transition: all 0.2 ease-in-out;
 

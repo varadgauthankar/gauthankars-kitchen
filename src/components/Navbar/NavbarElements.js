@@ -87,7 +87,7 @@ export const NavLinks = styled(LinkScroll)`
   cursor: pointer;
 
   &.active {
-    border-bottom: 3px solid #f64b4b;
+    border-bottom: 3px solid #ff2929;
   }
 
   &:hover {
@@ -105,10 +105,10 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled(LinkRouter)`
   border-radius: 50px;
-  background: #f64b4b;
+  background: #ff2929;
   white-space: nowrap;
   padding: 10px 22px;
-  color: #fff;
+  color: #000;
   font-size: 16px;
   outline: none;
   border: none;
@@ -119,6 +119,5 @@ export const NavBtnLink = styled(LinkRouter)`
   &:hover {
     transition: all 0.2 ease-in-out;
     background: #fff;
-    color: #212121;
   }
 `;
