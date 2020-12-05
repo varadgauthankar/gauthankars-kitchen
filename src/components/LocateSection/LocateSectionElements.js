@@ -86,7 +86,8 @@ export const LocationImgWrap = styled.div`
   width: 450px;
   margin: 30px auto;
   overflow: hidden;
-  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+
   border-radius: 12px;
   @media screen and (max-width: 500px) {
     height: 30vh;
@@ -133,11 +134,11 @@ export const BtnWrap2 = styled.div`
 
 export const Button = styled(Link)`
   border-radius: 50px;
-  background: #f64b4b;
+  background: #ff2929;
   white-space: nowrap;
 
   padding: 14px 30px;
-  color: #212121;
+  color: #000;
   font-size: 20px;
   outline: none;
   border: none;
@@ -148,7 +149,7 @@ export const Button = styled(Link)`
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    color: #212121;
+    color: #000;
     background: #fff;
     box-shadow: 2px 2px 8px rgba(246, 75, 75, 0.3);
   }

@@ -3,7 +3,7 @@ import { Link as LinkScroll } from "react-scroll";
 
 export const Container = styled.div`
   padding: 80px 50px;
-  background: #f64b4b;
+  background: #000;
 
   @media screen and (max-width: 768px) {
     padding: 60px 30px;
@@ -92,10 +92,19 @@ export const Title = styled.p`
   color: #fff;
   font-weight: 700;
 `;
+export const LogoFull = styled.img`
+  display: none;
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
+`;
 
-export const Logo = styled.div`
-  font-size: 32px;
-  color: #fff;
+export const Logo = styled.img`
+  height: 110px;
+  margin-right: 20px;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const Icon = styled.i`

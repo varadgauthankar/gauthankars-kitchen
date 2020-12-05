@@ -52,6 +52,8 @@ export const ImageWrapper = styled.div`
   margin: 12px auto;
   overflow: hidden;
   border-radius: 12px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+
   @media screen and (max-width: 768px) {
     width: 100%;
     height: 26vh;
@@ -68,7 +70,6 @@ export const Image = styled.img`
   height: 100%;
   object-fit: cover;
   border-radius: 12px;
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
 
   &:hover {
     transform: scale(1.1);

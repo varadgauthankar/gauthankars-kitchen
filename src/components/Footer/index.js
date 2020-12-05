@@ -12,6 +12,7 @@ import {
   Row,
   Logo,
   Icon,
+  LogoFull,
 } from "./FooterElements";
 
 import {
@@ -22,13 +23,17 @@ import {
   FaEnvelope as Mail,
 } from "react-icons/fa";
 
+import logo_full from "../../images/logo/gauthankars_kitchen_full.svg";
+import logo_flame from "../../images/logo/gauthankars_kitchen_flame.svg";
+
 const Footer = () => {
   return (
     <Container>
       <Wrapper>
         <Row>
           <Column0>
-            <Logo>Logo</Logo>
+            <Logo src={logo_flame} />
+            <LogoFull src={logo_full} />
           </Column0>
           <Column1>
             <Title>Contact Us</Title>
