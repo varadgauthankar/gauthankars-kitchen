@@ -13,7 +13,7 @@ import {
   NavLogoImg,
 } from "./NavbarElements";
 
-import logo_flame from "../../images/logo/logo_flame.png";
+import logo_flame from "../../images/logo/gauthankars_kitchen_flame.svg";
 
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
