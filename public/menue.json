@@ -1,0 +1,64 @@
+[
+  {
+    "veg": [
+      {
+        "itemName": "Name1",
+        "itemPrice": "123"
+      },
+      {
+        "itemName": "Name2",
+        "itemPrice": "123"
+      },
+      {
+        "itemName": "Name3",
+        "itemPrice": "123"
+      },
+      {
+        "itemName": "Name4",
+        "itemPrice": "123"
+      },
+      {
+        "itemName": "Name5",
+        "itemPrice": "123"
+      },
+      {
+        "itemName": "Name6",
+        "itemPrice": "123"
+      },
+      {
+        "itemName": "Name7",
+        "itemPrice": "123"
+      }
+    ],
+    "nonVeg": [
+      {
+        "itemName": "Name11",
+        "itemPrice": "123"
+      },
+      {
+        "itemName": "Name22",
+        "itemPrice": "123"
+      },
+      {
+        "itemName": "Name33",
+        "itemPrice": "123"
+      },
+      {
+        "itemName": "Name44",
+        "itemPrice": "123"
+      },
+      {
+        "itemName": "Name55",
+        "itemPrice": "123"
+      },
+      {
+        "itemName": "Name66",
+        "itemPrice": "123"
+      },
+      {
+        "itemName": "Name77",
+        "itemPrice": "123"
+      }
+    ]
+  }
+]
