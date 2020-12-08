@@ -1,12 +1,10 @@
 import React from "react";
-import Navbar from "../../components/Menue/MenueNavbar";
-import { MenueWrapper } from "../../components/Menue/MenuePageComponents";
+import Menue from "../../components/Menue";
 
 const MenuePage = () => {
   return (
     <>
-      <Navbar />
-      <MenueWrapper />
+      <Menue />
     </>
   );
 };
