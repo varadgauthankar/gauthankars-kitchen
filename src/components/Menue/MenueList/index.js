@@ -6,7 +6,9 @@ const MenueList = () => {
   const [fishThaliList, setFishThali] = useState([]);
 
   useEffect(() => {
-    Axios.get("http://localhost:3000/menue.json").then((response) => {
+    Axios.get(
+      "https://raw.githubusercontent.com/varadgauthankar/gauthankars-kitchen/master/public/menue.json?token=AGPEE3KEOEXMZP6ZZJACWH273EAZ2"
+    ).then((response) => {
       setBurgerList(response.data.burger);
 
       setFishThali(response.data.fishThali);
