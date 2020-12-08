@@ -1,0 +1,26 @@
+{
+  "fishThali": [
+    {
+      "id": 1,
+      "itemName": "uste",
+      "itemPrice": 200
+    },
+    {
+      "id": 2,
+      "itemName": "iswan",
+      "itemPrice": 2003
+    }
+  ],
+  "burger": [
+    {
+      "id": 1,
+      "itemName": "king",
+      "itemPrice": 200
+    },
+    {
+      "id": 1,
+      "itemName": "fff",
+      "itemPrice": 200
+    }
+  ]
+}
