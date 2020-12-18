@@ -52,17 +52,21 @@ export const ImageWrapper = styled.div`
   margin: 12px auto;
   overflow: hidden;
   border-radius: 12px;
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+  box-shadow: 4px 4px 12px rgba(255, 41, 41, 0.4);
 
   @media screen and (max-width: 768px) {
-    width: 100%;
-    height: 26vh;
+    width: 300px;
+    height: 200px;
   }
 
   @media screen and (max-width: 350px) {
     width: 100%;
     height: 22vh;
     margin: 8px auto;
+  }
+
+  :hover {
+    box-shadow: 6px 6px 12px rgba(255, 41, 41, 0.4);
   }
 `;
 export const Image = styled.img`
