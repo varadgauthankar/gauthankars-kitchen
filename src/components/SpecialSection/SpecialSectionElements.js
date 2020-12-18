@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HeroContainer = styled.div`
-  background: #212121;
+  background: #221f1e;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -84,11 +84,11 @@ export const FoodCard = styled.div`
   text-align: center;
   background: #000;
   position: relative;
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
-
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
   overflow: hidden;
+  cursor: pointer;
   @media screen and (max-width: 768px) {
-    width: 100%;
+    width: 80%;
     height: 20vh;
     margin-left: auto;
     margin-right: auto;
@@ -103,6 +103,7 @@ export const FoodCard = styled.div`
 `;
 
 export const ImageText = styled.p`
+  font-size: 20px;
   position: absolute;
   color: #fff;
   top: 50%;
