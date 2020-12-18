@@ -1,7 +1,15 @@
 import styled from "styled-components";
 
+import {
+  FaMapMarkerAlt as Map,
+  FaPhoneAlt as Call,
+  FaEnvelope as Mail,
+  FaInstagram as Insta,
+  FaFacebookF as Fb,
+} from "react-icons/fa";
+
 export const HeroContainer = styled.div`
-  background: #212121;
+  background: #221f1e;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,7 +53,8 @@ export const Column2 = styled.div`
 export const ContentWrap = styled.div`
   text-align: left;
   margin-bottom: 30px;
-
+  display: flex;
+  flex-direction: column;
   @media screen and (max-width: 768px) {
     margin-bottom: 10px;
   }
@@ -59,7 +68,7 @@ export const Title = styled.p`
   font-size: 28px;
   font-weight: 700;
   color: #fff;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 
   @media screen and (max-width: 768px) {
     margin: 10px 0;
@@ -71,9 +80,9 @@ export const Title = styled.p`
   }
 `;
 
-export const Text = styled.p`
+export const Text = styled.a`
   color: #fff;
-  margin: 20px 0;
+  margin: 10px 0;
   @media screen and (max-width: 768px) {
     margin: 8px 0;
   }
@@ -83,16 +92,36 @@ export const Text = styled.p`
   }
 `;
 
-export const Icon = styled.i`
+export const MailIcon = styled(Mail)`
   color: #fff;
-  margin-right: 8px;
+  margin-right: 10px;
+`;
+
+export const CallIcon = styled(Call)`
+  color: #fff;
+  margin-right: 10px;
+`;
+
+export const MapIcon = styled(Map)`
+  color: #fff;
+  margin-right: 10px;
+`;
+
+export const InstaIcon = styled(Insta)`
+  color: #e1306c;
+  margin-right: 10px;
+`;
+
+export const FbIcon = styled(Fb)`
+  color: #4267b2;
+  margin-right: 10px;
 `;
 
 export const FormContainer = styled.div`
   margin-left: auto;
   border-radius: 12px;
-  box-shadow: 2px 2px 4px #212121;
-  background: #313131;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.2);
+  background: #2b2727;
   padding: 18px 22px;
   display: block;
   width: 450px;
@@ -107,6 +136,10 @@ export const FormContainer = styled.div`
   @media screen and (max-width: 350px) {
     padding: 12px 12px;
     margin: 10px auto 10px auto;
+  }
+
+  :hover {
+    box-shadow: 6px 6px 12px rgba(255, 31, 31, 0.2);
   }
 `;
 
@@ -185,6 +218,8 @@ export const Button = styled.button`
   }
 `;
 
+//left section
+
 export const SocialWrap = styled.div`
   text-align: left;
 `;
@@ -194,9 +229,8 @@ export const SocialTitle = styled.p`
   margin-bottom: 4px;
 `;
 
-export const SocialIcon = styled.i`
+export const SocialIcon = styled.a`
   color: #fff;
-  margin: 20px 20px 90px 0;
-
+  margin: 20px 10px 0 0;
   font-size: 22px;
 `;

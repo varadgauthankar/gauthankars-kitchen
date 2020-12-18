@@ -4,13 +4,11 @@ import {
   Column2,
   ContentWrap,
   HeroContainer,
-  Icon,
   Row,
   Title,
   Wrapper,
   Text,
   FormContainer,
-  //   Form,
   Input,
   TextArea,
   Button,
@@ -18,15 +16,12 @@ import {
   SocialIcon,
   SocialTitle,
   FormTitle,
+  MailIcon,
+  CallIcon,
+  MapIcon,
+  InstaIcon,
+  FbIcon,
 } from "./GetInTouchElements";
-
-import {
-  FaMapMarkerAlt as Map,
-  FaPhoneAlt as Call,
-  FaEnvelope as Mail,
-  FaInstagram as Insta,
-  FaFacebookF as Fb,
-} from "react-icons/fa";
 
 const GetInTouch = () => {
   return (
@@ -36,35 +31,33 @@ const GetInTouch = () => {
           <Column1>
             <ContentWrap>
               <Title>Get In Touch</Title>
-              <Text>
-                <Icon>
-                  <Mail />
-                </Icon>
+
+              <Text
+                href="mailto:contact@gauthankarskitchen.com"
+                target="_blank"
+              >
+                <MailIcon />
                 contact@gauthankarskitchen.com
               </Text>
 
-              <Text>
-                <Icon>
-                  <Call />
-                </Icon>
+              <Text href="tel:1234657890" target="_blank">
+                <CallIcon />
                 +91 1212121212
               </Text>
 
-              <Text>
-                <Icon>
-                  <Map />
-                </Icon>
+              <Text href="/direction" target="_blank">
+                <MapIcon />
                 adress lorem ipsum dolo sit
               </Text>
             </ContentWrap>
 
             <SocialWrap>
               <SocialTitle>Connect with us</SocialTitle>
-              <SocialIcon>
-                <Insta color="#E1306C" />
+              <SocialIcon href="https://insta.com" target="_blank">
+                <InstaIcon />
               </SocialIcon>
-              <SocialIcon>
-                <Fb color="4267B2" />
+              <SocialIcon href="https://fb.com" target="_blank">
+                <FbIcon />
               </SocialIcon>
             </SocialWrap>
           </Column1>
