@@ -1,6 +1,14 @@
 import styled from "styled-components";
 import { Link as LinkScroll } from "react-scroll";
 
+import {
+  FaFacebookF as Fb,
+  FaInstagram as Insta,
+  FaMapMarkerAlt as Map,
+  FaPhoneAlt as Call,
+  FaEnvelope as Mail,
+} from "react-icons/fa";
+
 export const Container = styled.div`
   padding: 80px 50px;
   background: #000;
@@ -54,7 +62,6 @@ export const Column3 = styled.div`
 
 export const Row = styled.div`
   display: grid;
-  /* grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); */
   grid-gap: 20px;
   grid-template-areas: "col0 col1 col2 col3";
 
@@ -68,11 +75,6 @@ export const LinkS = styled(LinkScroll)`
   color: #fff;
   text-decoration: none;
   cursor: pointer;
-  &:hover {
-    color: #fff;
-    transition: 200ms ease-in-out;
-    font-weight: bold;
-  }
 `;
 
 export const LinkA = styled.a`
@@ -80,17 +82,12 @@ export const LinkA = styled.a`
   color: #fff;
   text-decoration: none;
   cursor: pointer;
-  &:hover {
-    color: #fff;
-    transition: 200ms ease-in-out;
-    font-weight: bold;
-  }
 `;
 export const Title = styled.p`
   font-size: 20px;
-
   color: #fff;
   font-weight: 700;
+  margin-bottom: 10px;
 `;
 export const LogoFull = styled.img`
   display: none;
@@ -107,7 +104,27 @@ export const Logo = styled.img`
   }
 `;
 
-export const Icon = styled.i`
+export const MapIcon = styled(Map)`
+  color: #fff;
+  margin-right: 8px;
+`;
+
+export const MailIcon = styled(Mail)`
+  color: #fff;
+  margin-right: 8px;
+`;
+
+export const CallIcon = styled(Call)`
+  color: #fff;
+  margin-right: 8px;
+`;
+
+export const FbIcon = styled(Fb)`
+  color: #fff;
+  margin-right: 8px;
+`;
+
+export const InstaIcon = styled(Insta)`
   color: #fff;
   margin-right: 8px;
 `;
