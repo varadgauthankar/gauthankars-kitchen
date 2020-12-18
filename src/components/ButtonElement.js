@@ -15,11 +15,13 @@ export const Button = styled(Link)`
   align-items: center;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
+  box-shadow: 6px 6px 12px rgba(255, 41, 41, 0.2);
 
   &:hover {
     transition: all 0.2s ease-in-out;
     color: #212121;
     background: #fff;
-    box-shadow: 2px 2px 8px rgba(255, 41, 41, 0.4);
+
+    box-shadow: 6px 6px 12px rgba(255, 41, 41, 0.4);
   }
 `;
