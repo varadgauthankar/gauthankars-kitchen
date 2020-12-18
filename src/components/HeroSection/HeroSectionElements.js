@@ -37,7 +37,7 @@ export const BgVideo = styled.video`
   filter: brightness(20%);
 `;
 
-export const LogoVideo = styled.img`
+export const LogoImage = styled.img`
   /* font-size: 98px; */
   /* color: #fff; */
   height: 20vh;

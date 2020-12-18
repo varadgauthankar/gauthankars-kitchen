@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Video from "../../videos/video.mp4";
-import logo from "../../images/logo.png";
+import logo from "../../images/logo/gauthankars_kitchen_flame.svg";
 import { Button } from "../ButtonElement";
 import Spacer from "../Spacer";
 import styled from "styled-components";
@@ -10,7 +10,7 @@ import {
   HeadLine,
   HeroBg,
   HeroContainer,
-  LogoVideo,
+  LogoImage,
   TagLine,
 } from "./HeroSectionElements";
 
@@ -28,7 +28,7 @@ const Hero = () => {
       </HeroBg>
 
       <ContentWrap>
-        <LogoVideo src={logo} />
+        <LogoImage src={logo} />
         <HeadLine>Welcome To Gauthankar's Kitchen</HeadLine>
         <TagLine>Food For The Soul</TagLine>
         <Spacer height={12} />
