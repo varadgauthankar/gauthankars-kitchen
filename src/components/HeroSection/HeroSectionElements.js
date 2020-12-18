@@ -42,6 +42,7 @@ export const LogoImage = styled.img`
   /* color: #fff; */
   height: 20vh;
   text-align: center;
+  margin-right: 30px;
 `;
 
 export const HeadLine = styled.p`
