@@ -82,12 +82,12 @@ export const Address = styled.p`
 `;
 
 export const LocationImgWrap = styled.div`
-  height: 35vh;
+  height: 300px;
   width: 450px;
   margin: 30px auto;
   overflow: hidden;
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
-
+  box-shadow: 4px 4px 12px rgba(255, 41, 41, 0.4);
+  cursor: pointer;
   border-radius: 12px;
   @media screen and (max-width: 500px) {
     height: 30vh;
@@ -96,6 +96,10 @@ export const LocationImgWrap = styled.div`
 
   @media screen and (max-width: 350px) {
     margin: 20px auto;
+  }
+
+  :hover {
+    box-shadow: 6px 6px 12px rgba(255, 41, 41, 0.4);
   }
 `;
 
@@ -146,12 +150,13 @@ export const Button = styled(Link)`
   align-items: center;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
+  box-shadow: 4px 4px 12px rgba(255, 41, 41, 0.4);
 
   &:hover {
     transition: all 0.2s ease-in-out;
     color: #000;
     background: #fff;
-    box-shadow: 2px 2px 8px rgba(246, 75, 75, 0.3);
+    box-shadow: 6px 6px 12px rgba(255, 41, 41, 0.6);
   }
 `;
 

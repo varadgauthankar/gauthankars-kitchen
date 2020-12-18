@@ -14,7 +14,7 @@ import {
   LocationImgWrap,
   Button,
 } from "../LocateSection/LocateSectionElements";
-import Location from "../../images/brr.jpg";
+import Location from "../../images/map.svg";
 
 const Locate = () => {
   return (
@@ -31,9 +31,11 @@ const Locate = () => {
             </BtnWrap>
           </Column1>
           <Column2>
-            <LocationImgWrap>
-              <LocationMap src={Location} />
-            </LocationImgWrap>
+            <a href="/direction" target="_blank">
+              <LocationImgWrap>
+                <LocationMap src={Location} />
+              </LocationImgWrap>
+            </a>
           </Column2>
         </LocateContentRow>
         <BtnWrap2>
