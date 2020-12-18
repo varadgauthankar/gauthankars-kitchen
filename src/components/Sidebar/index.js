@@ -20,20 +20,25 @@ const SideBar = ({ isOpen, toggle }) => {
       </Icon>
       <SideBarWrapper>
         <SideBarMenue>
-          <SideBarLink to="contact" onClick={toggle}>
-            Contact
-          </SideBarLink>
           <SideBarLink to="about" onClick={toggle}>
-           About Us
+            About Us
           </SideBarLink>
+
           <SideBarLink to="special" onClick={toggle}>
             Our Special
           </SideBarLink>
-          <SideBarLink to="gallery" onClick={toggle}>
+
+          {/* TODO: uncomment later */}
+          {/* <SideBarLink to="gallery" onClick={toggle}>
             Gallery
-          </SideBarLink>
+          </SideBarLink> */}
+
           <SideBarLink to="locate" onClick={toggle}>
             Locate
+          </SideBarLink>
+
+          <SideBarLink to="contact" onClick={toggle}>
+            Contact
           </SideBarLink>
         </SideBarMenue>
         <SideBtnWrap>
