@@ -75,6 +75,7 @@ export const LinkS = styled(LinkScroll)`
   color: #fff;
   text-decoration: none;
   cursor: pointer;
+  margin: 2px 0;
 `;
 
 export const LinkA = styled.a`
@@ -82,12 +83,13 @@ export const LinkA = styled.a`
   color: #fff;
   text-decoration: none;
   cursor: pointer;
+  margin: 2px 0;
 `;
 export const Title = styled.p`
   font-size: 20px;
   color: #fff;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 `;
 export const LogoFull = styled.img`
   display: none;

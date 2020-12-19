@@ -1,13 +1,8 @@
 import React from "react";
 import MenueList from "./MenueList";
-import Navbar from "./MenueNavbar";
 
 const Menue = () => {
-  return (
-    <>
-      <Navbar /> <MenueList />
-    </>
-  );
+  return <MenueList />;
 };
 
 export default Menue;
