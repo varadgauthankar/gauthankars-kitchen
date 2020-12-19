@@ -38,10 +38,9 @@ export const BgVideo = styled.video`
 `;
 
 export const LogoImage = styled.img`
-  /* font-size: 98px; */
-  /* color: #fff; */
-  height: 20vh;
+  height: 18vh;
   text-align: center;
+  margin: 8px 0;
   margin-right: 30px;
 `;
 
