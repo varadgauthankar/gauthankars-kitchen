@@ -19,6 +19,8 @@ import {
   FbIcon,
 } from "./FooterElements";
 
+import { Link as LinkScroll } from "react-scroll";
+
 import logo_full from "../../images/logo/gauthankars_kitchen_full.svg";
 import logo_flame from "../../images/logo/gauthankars_kitchen_flame.svg";
 
@@ -28,8 +30,10 @@ const Footer = () => {
       <Wrapper>
         <Row>
           <Column0>
-            <Logo src={logo_flame} />
-            <LogoFull src={logo_full} />
+            <LinkScroll to="home" smooth={true} duration={600} spy={true}>
+              <Logo src={logo_flame} />
+              <LogoFull src={logo_full} />
+            </LinkScroll>
           </Column0>
           <Column1>
             <Title>Contact Us</Title>
