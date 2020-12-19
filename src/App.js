@@ -2,7 +2,7 @@ import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/HomePage";
 import MenuePage from "./pages/menue/";
-import Direction from "./components/Direction";
+import Direction from "./pages/Direction";
 import FormSubmitted from "./pages/FormSubmitted";
 import NotFound from "./pages/NotFound";
 
