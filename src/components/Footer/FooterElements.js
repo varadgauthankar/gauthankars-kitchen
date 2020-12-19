@@ -91,6 +91,7 @@ export const Title = styled.p`
 `;
 export const LogoFull = styled.img`
   display: none;
+  cursor: pointer;
   @media screen and (max-width: 768px) {
     display: block;
   }
@@ -99,6 +100,8 @@ export const LogoFull = styled.img`
 export const Logo = styled.img`
   height: 110px;
   margin-right: 20px;
+  cursor: pointer;
+
   @media screen and (max-width: 768px) {
     display: none;
   }
