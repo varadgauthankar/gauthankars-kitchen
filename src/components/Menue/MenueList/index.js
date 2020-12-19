@@ -6,7 +6,6 @@ import {
   MenueItemCategory,
   MenueItemCard,
   MenueItemContainer,
-  MenueItem,
   MenueItemName,
   MenueItemPrice,
   MenueSection,
