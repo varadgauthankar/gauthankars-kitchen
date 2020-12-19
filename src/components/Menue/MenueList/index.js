@@ -1,30 +1,28 @@
 import React, { useEffect, useState } from "react";
 import Axios from "axios";
-import {
-  MenueContainer,
-  Title,
-  MenueItemCategory,
-  MenueItemCard,
-  MenueItemContainer,
-  MenueItemName,
-  MenueItemPrice,
-  MenueSection,
-} from "./styled";
+import { MenueContainer, Title, Wrapper, Heading } from "./styled";
+
+import MenueCard from "./MenueCard";
 
 const MenueList = () => {
-  const [burgerList, setBurgerList] = useState([]);
-  const [fishThaliList, setFishThali] = useState([]);
+  const [burgers, setBurgers] = useState([]);
+  const [wraps, setWraps] = useState([]);
+  const [tctFavorites, setTctFavorites] = useState([]);
+  const [sides, setSides] = useState([]);
+  const [tctCombos, setTctCombos] = useState([]);
+  const [tctMealForTwos, setTctMealForTwos] = useState([]);
 
   useEffect(() => {
     Axios.get(
       "https://raw.githubusercontent.com/varadgauthankar/gauthankars-kitchen/master/public/menue.json?token=AGPEE3JVCUY5O4MVBE5RY2K745GX4"
     )
       .then((response) => {
-        setBurgerList(response.data.burger);
-
-        setFishThali(response.data.fishThali);
-
-        console.log(burgerList);
+        setBurgers(response.data.burger);
+        setWraps(response.data.wraps);
+        setTctFavorites(response.data.tctFavorite);
+        setSides(response.data.sides);
+        setTctCombos(response.data.tctCombo);
+        setTctMealForTwos(response.data.tctMealForTwo);
       })
       .catch((e) => {
         console.log(e);
@@ -32,32 +30,27 @@ const MenueList = () => {
   }, []);
 
   return (
-    <MenueContainer>
-      <Title>Our Menue</Title>
-      <Title>The Chicken Town</Title>
-      <MenueSection>
-        <MenueItemCard>
-          <MenueItemCategory>Burgers</MenueItemCategory>
-          <ul>
-            {fishThaliList.map((item) => (
-              <li key={item.id}>
-                <MenueItemContainer>
-                  <MenueItemName>{item.itemName}</MenueItemName>
-                  <MenueItemPrice>{item.itemPrice}</MenueItemPrice>
-                </MenueItemContainer>
-              </li>
-            ))}
-          </ul>
-        </MenueItemCard>
-      </MenueSection>
-      {/* <MenueItemContainer>
-        <MenueItemCategory>f</MenueItemCategory>
-        <MenueItem>
-          <MenueItemName></MenueItemName>
-          <MenueItemPrice></MenueItemPrice>
-        </MenueItem>
-      </MenueItemContainer> */}
-    </MenueContainer>
+    <Wrapper>
+      <MenueContainer>
+        <Title>Our Menue</Title>
+        <Heading>The Chicken Town</Heading>
+
+        <MenueCard itemList={burgers} itemCategory="Burgers" />
+
+        <MenueCard itemList={wraps} itemCategory="Wraps" />
+
+        <MenueCard itemList={tctFavorites} itemCategory="TCT's Favorite" />
+
+        <MenueCard itemList={sides} itemCategory="Sides" />
+
+        <MenueCard itemList={tctCombos} itemCategory="TCT's Combos" />
+
+        <MenueCard
+          itemList={tctMealForTwos}
+          itemCategory="TCT's Meal For Two"
+        />
+      </MenueContainer>
+    </Wrapper>
   );
 };
 
