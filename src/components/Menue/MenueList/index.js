@@ -13,9 +13,7 @@ const MenueList = () => {
   const [tctMealForTwos, setTctMealForTwos] = useState([]);
 
   useEffect(() => {
-    Axios.get(
-      "https://raw.githubusercontent.com/varadgauthankar/gauthankars-kitchen/master/public/menue.json?token=AGPEE3JVCUY5O4MVBE5RY2K745GX4"
-    )
+    Axios.get("https://gauthankarskitchen.com/menue.json")
       .then((response) => {
         setBurgers(response.data.burger);
         setWraps(response.data.wraps);
