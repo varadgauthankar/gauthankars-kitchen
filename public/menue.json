@@ -106,48 +106,28 @@
     },
     {
       "id": 8,
-      "itemName": "Chicken Satay",
-      "itemPrice": 140
-    },
-    {
-      "id": 9,
-      "itemName": "Chicken Cheese Fingers",
-      "itemPrice": 110
-    },
-    {
-      "id": 10,
-      "itemName": "Chicken Spring Roll",
-      "itemPrice": 110
-    },
-    {
-      "id": 11,
       "itemName": "Crispy Fired Chicken",
       "itemPrice": 100
     },
     {
-      "id": 12,
+      "id": 9,
       "itemName": "Chicken Nuggets",
       "itemPrice": 100
     },
     {
-      "id": 13,
+      "id": 10,
       "itemName": "Chicken Pops",
       "itemPrice": 110
     },
     {
-      "id": 14,
+      "id": 11,
       "itemName": "BBQ Wings",
       "itemPrice": 130
     },
     {
-      "id": 15,
-      "itemName": "Chicken Lollipop",
+      "id": 12,
+      "itemName": "Chicken Lollies",
       "itemPrice": 150
-    },
-    {
-      "id": 16,
-      "itemName": "Chicken Shezwan lollipop",
-      "itemPrice": 200
     }
   ],
   "sides": [
