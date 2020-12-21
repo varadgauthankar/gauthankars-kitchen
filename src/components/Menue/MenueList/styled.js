@@ -2,12 +2,23 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   background: #0f0e0d;
+  padding-top: 10px;
+`;
+
+export const MenueGrid = styled.div`
+  display: grid;
+  grid-auto-columns: 1fr 1fr;
+  grid-template-areas: "col1 col2";
+
+  @media screen and (max-width: 768px) {
+    grid-template-areas: "col1" "col2";
+  }
 `;
 
 export const MenueContainer = styled.div`
   max-width: 1300px;
   margin: 0 auto;
-  padding: 10px 18px;
+  padding: 8px 18px;
 `;
 
 export const MenueSection = styled.div``;
@@ -59,4 +70,48 @@ export const Ul = styled.ul`
 
 export const Li = styled.li`
   list-style: none;
+`;
+
+export const FailedToLoad = styled.div`
+  height: 100vh;
+`;
+
+export const NoResult = styled.img`
+  height: 200px;
+`;
+
+export const Column1 = styled.div`
+  grid-area: col1;
+  padding: 10px;
+  border-radius: 8px;
+  background: #2b2727;
+  margin: 8px 4px;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-radius: 8px 8px 0px 0px;
+  }
+`;
+
+export const Column2 = styled.div`
+  grid-area: col2;
+  padding: 10px;
+  border-radius: 8px;
+  background: #2b2727;
+  margin: 8px 4px;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 0;
+    padding-top: 0;
+
+    border-radius: 0px 0px 8px 8px;
+  }
+`;
+
+export const Line = styled.hr`
+  margin: 4px auto;
+  margin-top: 0;
+  width: 100px;
+  text-align: center;
 `;
