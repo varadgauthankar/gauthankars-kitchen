@@ -30,7 +30,7 @@ const Hero = () => {
       <ContentWrap>
         <LogoImage src={logo} />
         <HeadLine>Welcome To Gauthankar's Kitchen</HeadLine>
-        <TagLine>Food For The Soul</TagLine>
+        {/* <TagLine>Food For The Soul</TagLine> */}
         <Spacer height={12} />
         <Button to="/menue" onMouseEnter={onHover} onMouseLeave={onHover}>
           View Menue {hover ? <ArrowRightHover /> : <ArrowRight />}
