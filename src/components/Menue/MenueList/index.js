@@ -33,7 +33,7 @@ const MenueList = () => {
   const [tctMealForTwos, setTctMealForTwos] = useState([]);
 
   useEffect(() => {
-    Axios.get("http://gauthankarskitchen.com/menue.json")
+    Axios.get("https://gauthankarskitchen.com/menue.json")
       .then((response) => {
         setBurgers(response.data.burger);
         setWraps(response.data.wraps);
