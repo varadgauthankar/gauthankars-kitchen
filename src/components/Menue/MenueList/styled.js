@@ -24,7 +24,7 @@ export const MenueContainer = styled.div`
 export const MenueSection = styled.div``;
 
 export const Title = styled.p`
-  color: #ffedc4;
+  color: #fff;
   font-weight: 700;
   font-size: 28px;
   text-align: center;
@@ -35,6 +35,7 @@ export const Heading = styled.p`
   font-weight: 700;
   font-size: 22px;
   text-align: center;
+  margin-top: 8px;
 `;
 
 export const MenueItemCard = styled.div`
@@ -72,12 +73,9 @@ export const Li = styled.li`
   list-style: none;
 `;
 
-export const FailedToLoad = styled.div`
-  height: 100vh;
-`;
-
 export const NoResult = styled.img`
   height: 200px;
+  text-align: center;
 `;
 
 export const Column1 = styled.div`
@@ -110,8 +108,33 @@ export const Column2 = styled.div`
 `;
 
 export const Line = styled.hr`
-  margin: 4px auto;
-  margin-top: 0;
+  margin: 4px auto 6px auto;
+
   width: 100px;
   text-align: center;
+`;
+
+export const FailedToLoad = styled.div`
+  height: 81vh;
+  position: relative;
+`;
+
+export const ErrContainer = styled.div`
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+`;
+
+export const NoResultsImg = styled.img`
+  height: 200px;
+`;
+
+export const ErrMsg = styled.p`
+  text-align: center;
+  padding: 10px 0;
+  color: #ff2929;
+  font-weight: 600;
+  font-size: 26px;
 `;
