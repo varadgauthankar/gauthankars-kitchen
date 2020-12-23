@@ -32,16 +32,20 @@ const MenueList = () => {
   const [tctCombos, setTctCombos] = useState([]);
   const [tctMealForTwos, setTctMealForTwos] = useState([]);
 
-  useEffect(() => {
-    Axios.get("https://gauthankarskitchen.com/menue.json")
-      .then((response) => {
-        setBurgers(response.data.burger);
-        setWraps(response.data.wraps);
-        setTctFavorites(response.data.tctFavorite);
-        setSides(response.data.sides);
-        setTctCombos(response.data.tctCombo);
-        setTctMealForTwos(response.data.tctMealForTwo);
+  const setMenueCategories = (response) => {
+    setBurgers(response.burger);
+    setWraps(response.wraps);
+    setTctFavorites(response.tctFavorite);
+    setSides(response.sides);
+    setTctCombos(response.tctCombo);
+    setTctMealForTwos(response.tctMealForTwo);
+  };
 
+  useEffect(() => {
+    console.log(menueLocalData);
+    Axios.get("http://localhost:3000/menue.json")
+      .then((response) => {
+        setMenueCategories(response.data);
         setIsLoaded(true);
       })
       .catch((error) => {

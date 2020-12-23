@@ -35,7 +35,7 @@ export const Heading = styled.p`
   font-weight: 700;
   font-size: 22px;
   text-align: center;
-  margin-top: 8px;
+  margin-top: 10px;
 `;
 
 export const MenueItemCard = styled.div`
@@ -108,7 +108,7 @@ export const Column2 = styled.div`
 `;
 
 export const Line = styled.hr`
-  margin: 4px auto 6px auto;
+  margin: 2px auto;
 
   width: 100px;
   text-align: center;

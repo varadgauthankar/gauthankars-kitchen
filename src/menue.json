@@ -1,0 +1,194 @@
+{
+  "burger": [
+    {
+      "id": 1,
+      "itemName": "TCT Special Burger",
+      "itemPrice": 350
+    },
+    {
+      "id": 2,
+      "itemName": "Grill Chicekn Burger",
+      "itemPrice": 120
+    },
+    {
+      "id": 3,
+      "itemName": "Crispy Chicekn Burger",
+      "itemPrice": 120
+    },
+    {
+      "id": 4,
+      "itemName": "Hot and Spicy Burger",
+      "itemPrice": 130
+    },
+    {
+      "id": 5,
+      "itemName": "Double grill burger",
+      "itemPrice": 150
+    },
+    {
+      "id": 6,
+      "itemName": "Double Crispy Burger",
+      "itemPrice": 150
+    },
+    {
+      "id": 7,
+      "itemName": "Veg Burger",
+      "itemPrice": 110
+    }
+  ],
+  "wraps": [
+    {
+      "id": 1,
+      "itemName": "Chicken Burrito",
+      "itemPrice": 120
+    },
+    {
+      "id": 2,
+      "itemName": "Chicken Tikka Wrap",
+      "itemPrice": 130
+    },
+    {
+      "id": 3,
+      "itemName": "Chicken Maxicana Wrap",
+      "itemPrice": 140
+    },
+    {
+      "id": 4,
+      "itemName": "Veg Wrap",
+      "itemPrice": 100
+    },
+    {
+      "id": 5,
+      "itemName": "Veg Maxicana Wrap",
+      "itemPrice": 110
+    },
+    {
+      "id": 6,
+      "itemName": "Q Maxicana Wrap",
+      "itemPrice": 120
+    }
+  ],
+  "tctFavorite": [
+    {
+      "id": 1,
+      "itemName": "Chicken Peri Peri",
+      "itemPrice": 150
+    },
+    {
+      "id": 2,
+      "itemName": "Chicken Spicy",
+      "itemPrice": 150
+    },
+    {
+      "id": 3,
+      "itemName": "Chicken Crispy Thai",
+      "itemPrice": 100
+    },
+    {
+      "id": 4,
+      "itemName": "BBQ Grilled Thai",
+      "itemPrice": 100
+    },
+    {
+      "id": 5,
+      "itemName": "Jamaican D'Stick",
+      "itemPrice": 90
+    },
+    {
+      "id": 6,
+      "itemName": "Crispy D'Stick",
+      "itemPrice": 90
+    },
+    {
+      "id": 7,
+      "itemName": "Crunchy Strips",
+      "itemPrice": 140
+    },
+    {
+      "id": 8,
+      "itemName": "Crispy Fired Chicken",
+      "itemPrice": 100
+    },
+    {
+      "id": 9,
+      "itemName": "Chicken Nuggets",
+      "itemPrice": 100
+    },
+    {
+      "id": 10,
+      "itemName": "Chicken Pops",
+      "itemPrice": 110
+    },
+    {
+      "id": 11,
+      "itemName": "BBQ Wings",
+      "itemPrice": 130
+    },
+    {
+      "id": 12,
+      "itemName": "Chicken Lollies",
+      "itemPrice": 150
+    }
+  ],
+  "sides": [
+    {
+      "id": 1,
+      "itemName": "Potato Veggies",
+      "itemPrice": 130
+    },
+    {
+      "id": 2,
+      "itemName": "French Fries (Simply Salted)",
+      "itemPrice": 75
+    },
+    {
+      "id": 3,
+      "itemName": "French Fries (Spicy)",
+      "itemPrice": 95
+    },
+    {
+      "id": 4,
+      "itemName": "Chilly Garlic Potato Shots",
+      "itemPrice": 110
+    },
+    {
+      "id": 5,
+      "itemName": "BBQ Dips",
+      "itemPrice": 20
+    },
+    {
+      "id": 6,
+      "itemName": "Cheesy Dips",
+      "itemPrice": 20
+    }
+  ],
+  "tctCombo": [
+    {
+      "id": 1,
+      "itemName": "Chicken Burger + Coke",
+      "itemPrice": 165
+    },
+    {
+      "id": 2,
+      "itemName": "Chicken Burger + Fries(R) + Coke",
+      "itemPrice": 235
+    },
+    {
+      "id": 3,
+      "itemName": "Chicken Burger + Fries(R) + Strips + Coke",
+      "itemPrice": 375
+    }
+  ],
+  "tctMealForTwo": [
+    {
+      "id": 1,
+      "itemName": "2 Chicken Burger + 1 Fires(R) + 2 Coke",
+      "itemPrice": 0
+    },
+    {
+      "id": 2,
+      "itemName": "2 TCT's Special Burger + 2 Coke",
+      "itemPrice": 0
+    }
+  ]
+}
