@@ -42,7 +42,6 @@ const MenueList = () => {
   };
 
   useEffect(() => {
-    console.log(menueLocalData);
     Axios.get("http://localhost:3000/menue.json")
       .then((response) => {
         setMenueCategories(response.data);
