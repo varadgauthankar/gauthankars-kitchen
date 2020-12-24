@@ -32,8 +32,8 @@ const Hero = () => {
         <HeadLine>Welcome To Gauthankar's Kitchen</HeadLine>
         {/* <TagLine>Food For The Soul</TagLine> */}
         <Spacer height={12} />
-        <Button to="/menue" onMouseEnter={onHover} onMouseLeave={onHover}>
-          View Menue {hover ? <ArrowRightHover /> : <ArrowRight />}
+        <Button to="/menu" onMouseEnter={onHover} onMouseLeave={onHover}>
+          View Menu {hover ? <ArrowRightHover /> : <ArrowRight />}
         </Button>
       </ContentWrap>
     </HeroContainer>

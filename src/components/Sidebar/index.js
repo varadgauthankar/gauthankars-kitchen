@@ -42,8 +42,8 @@ const SideBar = ({ isOpen, toggle }) => {
           </SideBarLink>
         </SideBarMenue>
         <SideBtnWrap>
-          <Button to="/menue" onClick={toggle}>
-            Menue
+          <Button to="/menu" onClick={toggle}>
+            menu
           </Button>
         </SideBtnWrap>
       </SideBarWrapper>

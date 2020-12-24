@@ -55,7 +55,7 @@ const MenueList = () => {
 
   return (
     <Wrapper>
-      <Title>Our Menue</Title>
+      <Title>Our Menu</Title>
       <Line />
 
       <MenueContainer>

@@ -56,8 +56,8 @@ const Footer = () => {
 
           <Column2>
             <Title>About Us</Title>
-            <LinkA target="_blank" href="/menue">
-              Menue
+            <LinkA target="_blank" href="/menu">
+              Menu
             </LinkA>
             <LinkS to="about" smooth={true} duration={600} spy={true}>
               Story
