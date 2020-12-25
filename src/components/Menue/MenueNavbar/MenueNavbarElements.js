@@ -40,6 +40,10 @@ export const NavLogo = styled(LinkRouter)`
   text-decoration: none;
 `;
 
+export const NavLogoImg = styled.img`
+  height: 70px;
+`;
+
 export const NavBackIcon = styled(LinkRouter)`
   color: #fff;
   justify-self: flex-start;

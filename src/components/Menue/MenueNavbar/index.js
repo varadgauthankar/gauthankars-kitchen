@@ -4,7 +4,10 @@ import {
   NavBackIcon,
   NavbarContainer,
   NavLogo,
+  NavLogoImg,
 } from "../MenueNavbar/MenueNavbarElements";
+
+import logo_flame from "../../../images/logo/gauthankars_kitchen_flame.svg";
 
 import { IoIosArrowBack } from "react-icons/io";
 
@@ -14,9 +17,11 @@ const Navbar = () => {
       <Nav>
         <NavbarContainer>
           <NavBackIcon to="/">
-            <IoIosArrowBack />
+            <IoIosArrowBack size={30} />
           </NavBackIcon>
-          <NavLogo to="/">Logo</NavLogo>
+          <NavLogo to="/">
+            <NavLogoImg src={logo_flame} />
+          </NavLogo>
         </NavbarContainer>
       </Nav>
     </>
