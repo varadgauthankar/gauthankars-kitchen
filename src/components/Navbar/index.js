@@ -33,7 +33,13 @@ const Navbar = ({ toggle }) => {
     <>
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
-          <NavLogo to="/">
+          <NavLogo
+            to="home"
+            smooth={true}
+            duration={600}
+            spy={true}
+            offset={-80}
+          >
             <NavLogoImg src={logo_flame} />
           </NavLogo>
           <MobileIcon onClick={toggle}>

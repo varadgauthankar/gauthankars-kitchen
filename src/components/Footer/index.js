@@ -19,28 +19,26 @@ import {
   FbIcon,
 } from "./FooterElements";
 
-import { Link as LinkScroll } from "react-scroll";
-
 import logo_full from "../../images/logo/gauthankars_kitchen_full.svg";
 import logo_flame from "../../images/logo/gauthankars_kitchen_flame.svg";
 
-const Footer = () => {
+const Footer = ({ isHome }) => {
   return (
     <Container>
       <Wrapper>
         <Row>
           <Column0>
-            <LinkScroll to="home" smooth={true} duration={600} spy={true}>
+            <LinkA href="/">
               <Logo src={logo_flame} />
               <LogoFull src={logo_full} />
-            </LinkScroll>
+            </LinkA>
           </Column0>
           <Column1>
             <Title>Contact Us</Title>
 
-            <LinkA href="mailto:contact@gauthankarskitchen" target="_blank">
+            <LinkA href="mailto:gauthankarskitchen@gmail.com" target="_blank">
               <MailIcon />
-              contact@gauthankarskithen.com
+              gauthankarskitchen@gmail.com
             </LinkA>
 
             <LinkA href="/direction" target="_blank">
@@ -59,12 +57,25 @@ const Footer = () => {
             <LinkA target="_blank" href="/menu">
               Menu
             </LinkA>
-            <LinkS to="about" smooth={true} duration={600} spy={true}>
-              Story
-            </LinkS>
-            <LinkS to="special" smooth={true} duration={600} spy={true}>
-              Our Special
-            </LinkS>
+            {isHome ? (
+              <>
+                <LinkS to="about" smooth={true} duration={600} spy={true}>
+                  Story
+                </LinkS>
+                <LinkS to="special" smooth={true} duration={600} spy={true}>
+                  Our Special
+                </LinkS>
+              </>
+            ) : (
+              <>
+                <LinkA href="https://gauthankarskitchen.com/#about">
+                  Story
+                </LinkA>
+                <LinkA href="https://gauthankarskitchen.com/#special">
+                  Our Special
+                </LinkA>
+              </>
+            )}
 
             {/* TODO: uncomment when gallery will be added */}
             {/* 

@@ -26,7 +26,7 @@ const Home = () => {
       {/* <Gallery /> */}
       <Locate />
       <GetInTouch />
-      <Footer />
+      <Footer isHome={true} />
     </>
   );
 };

@@ -8,7 +8,7 @@ const MenuePage = () => {
     <>
       <Navbar />
       <Menue />
-      <Footer />
+      <Footer isHome={false} />
     </>
   );
 };
