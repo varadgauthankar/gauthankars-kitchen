@@ -21,6 +21,7 @@ import {
 
 import logo_full from "../../images/logo/gauthankars_kitchen_full.svg";
 import logo_flame from "../../images/logo/gauthankars_kitchen_flame.svg";
+import details from "../../details";
 
 const Footer = ({ isHome }) => {
   return (
@@ -38,17 +39,17 @@ const Footer = ({ isHome }) => {
 
             <LinkA href="mailto:gauthankarskitchen@gmail.com" target="_blank">
               <MailIcon />
-              gauthankarskitchen@gmail.com
+              {details.email}
             </LinkA>
 
             <LinkA href="/direction" target="_blank">
               <MapIcon />
-              adress
+              {details.shortAddress}
             </LinkA>
 
             <LinkA href="tel:919191991" target="_blank">
               <CallIcon />
-              1212121212
+              {details.phoneNo}
             </LinkA>
           </Column1>
 
@@ -87,12 +88,12 @@ const Footer = ({ isHome }) => {
           <Column3>
             <Title>Social Media</Title>
 
-            <LinkA href="https://instagram.com" target="_blank">
+            <LinkA href={details.instaLink} target="_blank">
               <InstaIcon />
               Instagram
             </LinkA>
 
-            <LinkA href="https://facebook.com" target="_blank">
+            <LinkA href={details.facebookLink} target="_blank">
               <FbIcon />
               Facebook
             </LinkA>

@@ -11,9 +11,7 @@ export const HeroContainer = styled.div`
   z-index: 1;
 `;
 export const Wrapper = styled.div`
-  /* display: grid; */
   z-index: 1;
-  /* height: 60vh; */
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
@@ -28,8 +26,6 @@ export const Wrapper = styled.div`
   @media screen and (max-width: 350px) {
     margin-top: 50px;
   }
-
-  /* justify-content: space-around; */
 `;
 
 export const LocateContentRow = styled.div`
@@ -44,8 +40,13 @@ export const LocateContentRow = styled.div`
 `;
 
 export const Column1 = styled.div`
-  text-align: center;
+  text-align: left;
   grid-area: col1;
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+    font-size: 22px;
+  }
 `;
 
 export const Column2 = styled.div`
@@ -54,13 +55,9 @@ export const Column2 = styled.div`
 `;
 
 export const Heading = styled.p`
-  color: #212121;
-  text-align: left;
+  color: #000;
   font-size: 32px;
   font-weight: 700;
-  @media screen and (max-width: 768px) {
-    text-align: center;
-  }
 
   @media screen and (max-width: 350px) {
     font-size: 28px;
@@ -68,17 +65,25 @@ export const Heading = styled.p`
 `;
 
 export const Address = styled.p`
-  color: #212121;
-  text-align: left;
+  color: #000;
   font-size: 24px;
 
   @media screen and (max-width: 768px) {
-    text-align: center;
+    font-size: 22px;
   }
 
   @media screen and (max-width: 350px) {
     font-size: 20px;
   }
+`;
+
+export const HourTitle = styled.p`
+  font-size: 26px;
+  font-weight: 700;
+`;
+
+export const Day = styled.p`
+  font-size: 20;
 `;
 
 export const LocationImgWrap = styled.div`
@@ -87,7 +92,6 @@ export const LocationImgWrap = styled.div`
   margin: 30px auto;
   overflow: hidden;
   box-shadow: 4px 4px 12px rgba(255, 41, 41, 0.4);
-  cursor: pointer;
   border-radius: 12px;
   @media screen and (max-width: 500px) {
     height: 30vh;
@@ -103,17 +107,14 @@ export const LocationImgWrap = styled.div`
   }
 `;
 
-export const LocationMap = styled.img`
+export const LocationMap = styled.iframe`
   background: #eee;
   height: 100%;
   width: 100%;
   object-fit: cover;
   text-align: center;
   border-radius: 12px;
-  &:hover {
-    transition: 0.2s ease-in-out;
-    transform: scale(1.1);
-  }
+  border: 0;
 `;
 
 export const BtnWrap = styled.div`

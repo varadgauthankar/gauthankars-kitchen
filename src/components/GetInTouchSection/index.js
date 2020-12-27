@@ -23,6 +23,8 @@ import {
   FbIcon,
 } from "./GetInTouchElements";
 
+import details from "../../details";
+
 const GetInTouch = () => {
   return (
     <HeroContainer id="contact">
@@ -37,26 +39,26 @@ const GetInTouch = () => {
                 target="_blank"
               >
                 <MailIcon />
-                contact@gauthankarskitchen.com
+                {details.email}
               </Text>
 
               <Text href="tel:1234657890" target="_blank">
                 <CallIcon />
-                +91 1212121212
+                {details.phoneNo}
               </Text>
 
               <Text href="/direction" target="_blank">
                 <MapIcon />
-                adress lorem ipsum dolo sit
+                {details.address}
               </Text>
             </ContentWrap>
 
             <SocialWrap>
               <SocialTitle>Connect with us</SocialTitle>
-              <SocialIcon href="https://insta.com" target="_blank">
+              <SocialIcon href={details.instaLink} target="_blank">
                 <InstaIcon />
               </SocialIcon>
-              <SocialIcon href="https://fb.com" target="_blank">
+              <SocialIcon href={details.facebookLink} target="_blank">
                 <FbIcon />
               </SocialIcon>
             </SocialWrap>
