@@ -23,7 +23,7 @@ import {
   FbIcon,
 } from "./GetInTouchElements";
 
-import details from "../../details";
+import details from "../../utils/details";
 
 const GetInTouch = () => {
   return (

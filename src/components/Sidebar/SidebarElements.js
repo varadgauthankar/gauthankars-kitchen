@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { FaTimes } from "react-icons/fa";
 import { Link as LinkScroll } from "react-scroll";
+import colors from "../../utils/colors";
 
 export const SideBarContainer = styled.aside`
   position: fixed;
@@ -18,7 +19,7 @@ export const SideBarContainer = styled.aside`
 `;
 
 export const CloseIcon = styled(FaTimes)`
-  color: #fff;
+  color: ${colors.white};
 `;
 
 export const Icon = styled.div`
@@ -32,7 +33,7 @@ export const Icon = styled.div`
 `;
 
 export const SideBarWrapper = styled.div`
-  color: #fff;
+  color: ${colors.white};
 `;
 
 export const SideBarMenue = styled.ul`
@@ -54,11 +55,11 @@ export const SideBarLink = styled(LinkScroll)`
   text-decoration: none;
   list-style: none;
   transition: 0.2s ease-in-out;
-  color: #fff;
+  color: ${colors.white};
   cursor: pointer;
 
   &:hover {
-    color: #f64b4b;
+    color: ${colors.red};
     transition: 0.2s ease-in-out;
   }
 `;

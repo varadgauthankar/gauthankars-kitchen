@@ -1,7 +1,7 @@
 import styled from "styled-components";
-
+import colors from "../../utils/colors";
 export const HeroContainer = styled.div`
-  background: #221f1e;
+  background: ${colors.brown};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,7 +38,7 @@ export const ContentRow = styled.div`
 export const Heading = styled.p`
   text-align: center;
   font-size: ${({ isItalic }) => (isItalic ? "60px" : "60px")};
-  color: ${({ isItalic }) => (isItalic ? "#cfa670" : "#fff")};
+  color: ${({ isItalic }) => (isItalic ? colors.golden : colors.white)};
   line-height: 1;
   font-family: ${({ isItalic }) => (isItalic ? "'Kristi', cursive;" : "Lato")};
 
@@ -75,7 +75,7 @@ export const FoodCard = styled.div`
   width: 100%;
   border-radius: 12px;
   text-align: center;
-  background: #000;
+  background: ${colors.black};
   position: relative;
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
   overflow: hidden;
@@ -98,7 +98,7 @@ export const FoodCard = styled.div`
 export const ImageText = styled.p`
   font-size: 20px;
   position: absolute;
-  color: #fff;
+  color: ${colors.white};
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -110,7 +110,7 @@ export const FoodImg = styled.img`
   object-fit: cover;
   width: 100%;
   height: 100%;
-  background: #eee;
+  background: ${colors.black};
   border-radius: 12px;
   filter: brightness(30%);
   &:hover {

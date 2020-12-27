@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import colors from "../../utils/colors";
 
 import {
   FaMapMarkerAlt as Map,
@@ -9,7 +10,7 @@ import {
 } from "react-icons/fa";
 
 export const HeroContainer = styled.div`
-  background: #221f1e;
+  background: ${colors.brown};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,7 +45,6 @@ export const Row = styled.div`
 
 export const Column1 = styled.div`
   grid-area: col1;
-
   text-align: left;
 
   @media screen and (max-width: 768px) {
@@ -71,7 +71,7 @@ export const ContentWrap = styled.div`
 `;
 
 export const Title = styled.p`
-  color: ${({ isItalic }) => (isItalic ? "#cfa670" : "#fff")};
+  color: ${({ isItalic }) => (isItalic ? colors.golden : colors.white)};
   font-size: ${({ isItalic }) => (isItalic ? "60px" : "60px")};
   font-family: ${({ isItalic }) => (isItalic ? "'Kristi', cursive" : "Lato")};
   line-height: 1;
@@ -84,7 +84,7 @@ export const Title = styled.p`
 `;
 
 export const Text = styled.a`
-  color: #fff;
+  color: ${colors.white};
   margin: 10px 0;
   @media screen and (max-width: 768px) {
     margin: 8px 0;
@@ -96,27 +96,27 @@ export const Text = styled.a`
 `;
 
 export const MailIcon = styled(Mail)`
-  color: #fff;
+  color: ${colors.white};
   margin-right: 10px;
 `;
 
 export const CallIcon = styled(Call)`
-  color: #fff;
+  color: ${colors.white};
   margin-right: 10px;
 `;
 
 export const MapIcon = styled(Map)`
-  color: #fff;
+  color: ${colors.white};
   margin-right: 10px;
 `;
 
 export const InstaIcon = styled(Insta)`
-  color: #e1306c;
+  color: ${colors.instagram};
   margin-right: 10px;
 `;
 
 export const FbIcon = styled(Fb)`
-  color: #4267b2;
+  color: ${colors.facebook};
   margin-right: 10px;
 `;
 
@@ -124,12 +124,10 @@ export const FormContainer = styled.div`
   margin-left: auto;
   border-radius: 12px;
   box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.2);
-  background: #2b2727;
+  background: ${colors.brownLight};
   padding: 18px 22px;
   display: block;
   width: 450px;
-
-  /* display: none; */
 
   @media screen and (max-width: 768px) {
     margin: 25px auto 10px auto;
@@ -149,7 +147,7 @@ export const FormContainer = styled.div`
 export const FormTitle = styled.p`
   font-size: 28px;
   font-weight: 700;
-  color: #fff;
+  color: ${colors.white};
   margin-bottom: 12px;
 
   @media screen and (max-width: 768px) {
@@ -170,7 +168,7 @@ export const Input = styled.input`
   border: 2px solid #ff2929;
   background: none;
   padding: 6px 12px;
-  color: #fff;
+  color: ${colors.white};
   margin-bottom: 16px;
   outline: none;
 
@@ -185,10 +183,10 @@ export const TextArea = styled.textarea`
   border-radius: 8px;
   width: 100%;
   height: 10vh;
-  border: 2px solid #ff2929;
+  border: 2px solid ${colors.red};
   background: none;
   padding: 6px 12px;
-  color: #fff;
+  color: ${colors.white};
   margin-bottom: 10px;
   resize: none;
   outline: none;
@@ -205,17 +203,17 @@ export const Button = styled.button`
   margin: 0;
   padding: 10px 12px;
   border-radius: 8px;
-  background: #ff2929;
+  background: ${colors.red};
   cursor: pointer;
   outline: none;
   border: none;
-  color: #000;
+  color: ${colors.black};
   font-size: 16px;
   transition: all 0.2 ease-in-out;
 
   &:hover {
-    color: #000;
-    background: #fff;
+    color: ${colors.black};
+    background: ${colors.white};
     box-shadow: 2px 2px 8px rgba(246, 75, 75, 0.3);
     transition: all 0.2 ease-in-out;
   }
@@ -228,12 +226,12 @@ export const SocialWrap = styled.div`
 `;
 
 export const SocialTitle = styled.p`
-  color: #fff;
+  color: ${colors.white};
   margin-bottom: 4px;
 `;
 
 export const SocialIcon = styled.a`
-  color: #fff;
+  color: ${colors.white};
   margin: 20px 10px 0 0;
   font-size: 22px;
 `;

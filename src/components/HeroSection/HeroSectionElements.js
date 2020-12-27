@@ -1,7 +1,7 @@
 import styled from "styled-components";
-
+import colors from "../../utils/colors";
 export const HeroContainer = styled.div`
-  background: #0c0c0c;
+  background: ${colors.brown};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,7 +33,7 @@ export const BgVideo = styled.video`
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  background: #232a34;
+  background: ${colors.brown};
   filter: brightness(20%);
 `;
 
@@ -47,7 +47,7 @@ export const LogoImage = styled.img`
 export const HeadLine = styled.p`
   font-size: 32px;
   font-weight: 700;
-  color: #fff;
+  color: ${colors.white};
   text-align: center;
 
   @media screen and (max-width: 768px) {
@@ -63,6 +63,6 @@ export const HeadLine = styled.p`
 
 export const TagLine = styled.p`
   font-size: 20px;
-  color: #fff;
+  color: ${colors.white};
   text-align: center;
 `;

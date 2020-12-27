@@ -16,7 +16,7 @@ import {
   HourTitle,
   Day,
 } from "../LocateSection/LocateSectionElements";
-import details from "../../details";
+import details from "../../utils/details";
 
 const Locate = () => {
   const googleMapUrl =

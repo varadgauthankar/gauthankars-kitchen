@@ -1,9 +1,10 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { MdDirections } from "react-icons/md";
+import colors from "../../utils/colors";
 
 export const HeroContainer = styled.div`
-  background: #ffffff;
+  background: ${colors.white};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,7 +51,7 @@ export const Column2 = styled.div`
 `;
 
 export const Heading = styled.p`
-  color: ${({ isItalic }) => (isItalic ? "#cfa670" : "#000")};
+  color: ${({ isItalic }) => (isItalic ? colors.golden : colors.black)};
   font-size: ${({ isItalic }) => (isItalic ? "60px" : "60px")};
   font-family: ${({ isItalic }) => (isItalic ? "'Kristi', cursive" : "Lato")};
   line-height: 1;
@@ -62,7 +63,7 @@ export const Heading = styled.p`
 `;
 
 export const Address = styled.p`
-  color: #000;
+  color: ${colors.black};
   font-size: 22px;
   line-height: 1.4;
 
@@ -107,7 +108,6 @@ export const LocationImgWrap = styled.div`
 `;
 
 export const LocationMap = styled.iframe`
-  background: #eee;
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -138,11 +138,11 @@ export const BtnWrap2 = styled.div`
 
 export const Button = styled(Link)`
   border-radius: 50px;
-  background: #ff2929;
+  background: ${colors.red};
   white-space: nowrap;
 
   padding: 14px 30px;
-  color: #000;
+  color: ${colors.black};
   font-size: 20px;
   outline: none;
   border: none;
@@ -155,7 +155,7 @@ export const Button = styled(Link)`
   &:hover {
     transition: all 0.2s ease-in-out;
     color: #000;
-    background: #fff;
+    background: ${colors.white};
     box-shadow: 6px 6px 12px rgba(255, 41, 41, 0.6);
   }
 `;

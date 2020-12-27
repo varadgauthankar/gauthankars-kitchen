@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link as LinkScroll } from "react-scroll";
+import colors from "../../utils/colors";
 
 import {
   FaFacebookF as Fb,
@@ -11,7 +12,7 @@ import {
 
 export const Container = styled.div`
   padding: 80px 50px;
-  background: #000;
+  background: ${colors.black};
 
   @media screen and (max-width: 768px) {
     padding: 60px 30px;
@@ -80,7 +81,7 @@ export const Row = styled.div`
 
 export const LinkS = styled(LinkScroll)`
   font-size: 16px;
-  color: #fff;
+  color: ${colors.white};
   text-decoration: none;
   cursor: pointer;
   margin: 2px 0;
@@ -88,14 +89,14 @@ export const LinkS = styled(LinkScroll)`
 
 export const LinkA = styled.a`
   font-size: 16px;
-  color: #fff;
+  color: ${colors.white};
   text-decoration: none;
   cursor: pointer;
   margin: 2px 0;
 `;
 export const Title = styled.p`
   font-size: 18px;
-  color: #ffedc4;
+  color: ${colors.golden};
   font-weight: 700;
   margin-bottom: 6px;
   @media screen and (max-width: 768px) {
@@ -105,7 +106,7 @@ export const Title = styled.p`
 
 export const SubTitle = styled.p`
   font-size: 16px;
-  color: #fff;
+  color: ${colors.white};
   margin: 2px 0;
 `;
 export const LogoFull = styled.img`
@@ -127,26 +128,26 @@ export const Logo = styled.img`
 `;
 
 export const MapIcon = styled(Map)`
-  color: #fff;
+  color: ${colors.white};
   margin-right: 8px;
 `;
 
 export const MailIcon = styled(Mail)`
-  color: #fff;
+  color: ${colors.white};
   margin-right: 8px;
 `;
 
 export const CallIcon = styled(Call)`
-  color: #fff;
+  color: ${colors.white};
   margin-right: 8px;
 `;
 
 export const FbIcon = styled(Fb)`
-  color: #fff;
+  color: ${colors.white};
   margin-right: 8px;
 `;
 
 export const InstaIcon = styled(Insta)`
-  color: #fff;
+  color: ${colors.white};
   margin-right: 8px;
 `;

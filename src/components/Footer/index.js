@@ -23,7 +23,7 @@ import {
 
 import logo_full from "../../images/logo/gauthankars_kitchen_full.svg";
 import logo_flame from "../../images/logo/gauthankars_kitchen_flame.svg";
-import details from "../../details";
+import details from "../../utils/details";
 
 const Footer = ({ isHome }) => {
   return (

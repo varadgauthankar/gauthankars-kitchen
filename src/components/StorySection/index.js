@@ -14,7 +14,7 @@ import {
   TextWrapperMobile,
 } from "./StorySectionElements";
 import imgf from "../../images/1.jpg";
-import details from "../../details";
+import details from "../../utils/details";
 
 const Story = () => {
   return (

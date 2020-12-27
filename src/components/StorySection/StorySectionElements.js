@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import colors from "../../utils/colors";
 
 export const HeroContainer = styled.div`
-  background: #fff;
+  background: ${colors.white};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -94,7 +95,7 @@ export const TextWrapperMobile = styled.div`
 export const Heading = styled.p`
   font-size: ${({ isItalic }) => (isItalic ? "60px" : "60px")};
   text-align: center;
-  color: ${({ isItalic }) => (isItalic ? "#cfa670" : "#000")};
+  color: ${({ isItalic }) => (isItalic ? colors.golden : colors.black)};
   line-height: 1;
   font-weight: ${({ isItalic }) => (isItalic ? "300" : "400")};
   font-family: ${({ isItalic }) => (isItalic ? "'Kristi', cursive;" : "Lato")};
@@ -107,7 +108,7 @@ export const Heading = styled.p`
 export const HeadingMobile = styled.p`
   font-size: ${({ isItalic }) => (isItalic ? "60px" : "60px")};
   text-align: center;
-  color: ${({ isItalic }) => (isItalic ? "#cfa670" : "#000")};
+  color: ${({ isItalic }) => (isItalic ? colors.golden : colors.black)};
   line-height: 1;
   font-weight: ${({ isItalic }) => (isItalic ? "300" : "400")};
   font-family: ${({ isItalic }) => (isItalic ? "'Kristi', cursive;" : "Lato")};
