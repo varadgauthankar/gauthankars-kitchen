@@ -60,13 +60,21 @@ export const Column3 = styled.div`
   }
 `;
 
+export const Column4 = styled.div`
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+
+  grid-area: col4;
+`;
+
 export const Row = styled.div`
   display: grid;
   grid-gap: 20px;
-  grid-template-areas: "col0 col1 col2 col3";
+  grid-template-areas: "col0 col1 col2 col3 col4";
 
   @media screen and (max-width: 768px) {
-    grid-template-areas: "col0 col0 col0 col0" "col2 col2 col3 col3" "col1 col1 col1 col1";
+    grid-template-areas: "col0 col0 col0 col0" "col2 col2 col3 col3" "col4 col4 col4 col4" "col1 col1 col1 col1";
   }
 `;
 
@@ -86,10 +94,19 @@ export const LinkA = styled.a`
   margin: 2px 0;
 `;
 export const Title = styled.p`
-  font-size: 20px;
-  color: #fff;
+  font-size: 18px;
+  color: #ffedc4;
   font-weight: 700;
   margin-bottom: 6px;
+  @media screen and (max-width: 768px) {
+    font-size: 18px;
+  }
+`;
+
+export const SubTitle = styled.p`
+  font-size: 16px;
+  color: #fff;
+  margin: 2px 0;
 `;
 export const LogoFull = styled.img`
   display: none;

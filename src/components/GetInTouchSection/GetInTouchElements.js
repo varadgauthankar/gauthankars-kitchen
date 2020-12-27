@@ -44,6 +44,12 @@ export const Row = styled.div`
 
 export const Column1 = styled.div`
   grid-area: col1;
+
+  text-align: left;
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
 `;
 
 export const Column2 = styled.div`
@@ -65,18 +71,15 @@ export const ContentWrap = styled.div`
 `;
 
 export const Title = styled.p`
-  font-size: 28px;
-  font-weight: 700;
-  color: #fff;
-  margin-bottom: 20px;
-
+  color: ${({ isItalic }) => (isItalic ? "#cfa670" : "#fff")};
+  font-size: ${({ isItalic }) => (isItalic ? "60px" : "60px")};
+  font-family: ${({ isItalic }) => (isItalic ? "'Kristi', cursive" : "Lato")};
+  line-height: 1;
+  margin-bottom: ${({ isItalic }) => (isItalic ? "0" : "20px")};
   @media screen and (max-width: 768px) {
-    margin: 10px 0;
   }
 
   @media screen and (max-width: 350px) {
-    font-size: 22px;
-    margin-bottom: 10px;
   }
 `;
 

@@ -32,7 +32,8 @@ const GetInTouch = () => {
         <Row>
           <Column1>
             <ContentWrap>
-              <Title>Get In Touch</Title>
+              <Title isItalic={true}>Get In Touch</Title>
+              <Title>Contact Us</Title>
 
               <Text
                 href="mailto:contact@gauthankarskitchen.com"
@@ -49,7 +50,7 @@ const GetInTouch = () => {
 
               <Text href="/direction" target="_blank">
                 <MapIcon />
-                {details.address}
+                {details.shortAddress}
               </Text>
             </ContentWrap>
 
@@ -65,7 +66,7 @@ const GetInTouch = () => {
           </Column1>
           <Column2>
             <FormContainer>
-              <FormTitle>Contact Us</FormTitle>
+              <FormTitle>Send us a message</FormTitle>
               <form
                 name="contact"
                 method="POST"

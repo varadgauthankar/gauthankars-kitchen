@@ -24,7 +24,7 @@ export const Wrapper = styled.div`
     margin-bottom: 0;
   }
   @media screen and (max-width: 350px) {
-    margin-top: 50px;
+    /* margin-top: 50px; */
   }
 `;
 
@@ -42,11 +42,6 @@ export const LocateContentRow = styled.div`
 export const Column1 = styled.div`
   text-align: left;
   grid-area: col1;
-
-  @media screen and (max-width: 768px) {
-    text-align: center;
-    font-size: 22px;
-  }
 `;
 
 export const Column2 = styled.div`
@@ -55,9 +50,11 @@ export const Column2 = styled.div`
 `;
 
 export const Heading = styled.p`
-  color: #000;
-  font-size: 32px;
-  font-weight: 700;
+  color: ${({ isItalic }) => (isItalic ? "#cfa670" : "#000")};
+  font-size: ${({ isItalic }) => (isItalic ? "60px" : "60px")};
+  font-family: ${({ isItalic }) => (isItalic ? "'Kristi', cursive" : "Lato")};
+  line-height: 1;
+  margin-bottom: ${({ isItalic }) => (isItalic ? "0" : "20px")};
 
   @media screen and (max-width: 350px) {
     font-size: 28px;
@@ -66,20 +63,22 @@ export const Heading = styled.p`
 
 export const Address = styled.p`
   color: #000;
-  font-size: 24px;
+  font-size: 22px;
+  line-height: 1.4;
 
   @media screen and (max-width: 768px) {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   @media screen and (max-width: 350px) {
-    font-size: 20px;
+    font-size: 18px;
   }
 `;
 
 export const HourTitle = styled.p`
   font-size: 26px;
-  font-weight: 700;
+  font-weight: bold;
+  font-family: "lato";
 `;
 
 export const Day = styled.p`

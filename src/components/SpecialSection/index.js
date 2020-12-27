@@ -21,7 +21,9 @@ const Special = ({ toggle }) => {
   return (
     <HeroContainer id="special">
       <Wrapper>
+        <Heading isItalic={true}>For your tastebuds</Heading>
         <Heading>Our Special</Heading>
+        <br />
 
         <ContentRow>
           <Column1>

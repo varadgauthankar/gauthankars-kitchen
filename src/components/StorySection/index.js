@@ -11,14 +11,21 @@ import {
   HeadingMobile,
   StoryText,
   TextWrapper,
+  TextWrapperMobile,
 } from "./StorySectionElements";
 import imgf from "../../images/1.jpg";
+import details from "../../details";
 
 const Story = () => {
   return (
     <HeroContainer id="about">
       <Wrapper>
-        <HeadingMobile>About Us</HeadingMobile>
+        <TextWrapperMobile>
+          <HeadingMobile isItalic={true}>Discover</HeadingMobile>
+          <HeadingMobile isItalic={false}>Our Story</HeadingMobile>
+          <br />
+        </TextWrapperMobile>
+
         <ContentRow>
           <Column1>
             <ImageWrapper>
@@ -27,14 +34,10 @@ const Story = () => {
           </Column1>
           <Column2>
             <TextWrapper>
-              <Heading>Our Story</Heading>
-              <StoryText>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Quisquam consequuntur temporibus repellat eius sequi, maiores
-                nulla consequatur molestiae corporis ipsum, vitae deleniti iure
-                possimus saepe autem doloremque necessitatibus! Quisquam,
-                voluptate?
-              </StoryText>
+              <Heading isItalic={true}>Discover</Heading>
+              <Heading isItalic={false}>Our Story</Heading>
+              <br />
+              <StoryText>{details.about.line1}</StoryText>
             </TextWrapper>
           </Column2>
         </ContentRow>

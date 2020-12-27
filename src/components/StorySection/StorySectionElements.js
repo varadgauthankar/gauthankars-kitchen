@@ -49,7 +49,7 @@ export const Column2 = styled.div`
 export const ImageWrapper = styled.div`
   width: 400px;
   height: 250px;
-  margin: 12px auto;
+  margin: 7px auto;
   overflow: hidden;
   border-radius: 12px;
   box-shadow: 4px 4px 12px rgba(255, 41, 41, 0.4);
@@ -62,7 +62,7 @@ export const ImageWrapper = styled.div`
   @media screen and (max-width: 350px) {
     width: 100%;
     height: 22vh;
-    margin: 8px auto;
+    margin: 0px auto;
   }
 
   :hover {
@@ -82,16 +82,22 @@ export const Image = styled.img`
 `;
 
 export const TextWrapper = styled.div`
-  padding: 12px;
-  margin-bottom: 22px;
+  padding: 0 10px 0px 10px;
+`;
+
+export const TextWrapperMobile = styled.div`
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 `;
 
 export const Heading = styled.p`
-  font-size: 32px;
+  font-size: ${({ isItalic }) => (isItalic ? "60px" : "60px")};
   text-align: center;
-  color: #000;
-  font-weight: 700;
-  margin-bottom: 8px;
+  color: ${({ isItalic }) => (isItalic ? "#cfa670" : "#000")};
+  line-height: 1;
+  font-weight: ${({ isItalic }) => (isItalic ? "300" : "400")};
+  font-family: ${({ isItalic }) => (isItalic ? "'Kristi', cursive;" : "Lato")};
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -99,21 +105,20 @@ export const Heading = styled.p`
 `;
 
 export const HeadingMobile = styled.p`
-  font-size: 32px;
+  font-size: ${({ isItalic }) => (isItalic ? "60px" : "60px")};
   text-align: center;
-  color: #000;
-  font-weight: 700;
-  margin-bottom: 8px;
+  color: ${({ isItalic }) => (isItalic ? "#cfa670" : "#000")};
+  line-height: 1;
+  font-weight: ${({ isItalic }) => (isItalic ? "300" : "400")};
+  font-family: ${({ isItalic }) => (isItalic ? "'Kristi', cursive;" : "Lato")};
 
-  @media screen and (min-width: 768px) {
+  /* @media screen and (min-width: 768px) {
     display: none;
-  }
+  } */
 
   @media screen and (max-width: 350px) {
-    margin-bottom: 4px;
-
-    font-size: 28px;
-    font-weight: 600;
+    font-size: ${({ isItalic }) => (isItalic ? "50px" : "40px")};
+    line-height: 0.8;
   }
 `;
 export const StoryText = styled.p`

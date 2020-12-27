@@ -5,6 +5,7 @@ import {
   Column1,
   Column2,
   Column3,
+  Column4,
   LinkS,
   LinkA,
   Title,
@@ -17,6 +18,7 @@ import {
   CallIcon,
   InstaIcon,
   FbIcon,
+  SubTitle,
 } from "./FooterElements";
 
 import logo_full from "../../images/logo/gauthankars_kitchen_full.svg";
@@ -37,7 +39,7 @@ const Footer = ({ isHome }) => {
           <Column1>
             <Title>Contact Us</Title>
 
-            <LinkA href="mailto:gauthankarskitchen@gmail.com" target="_blank">
+            <LinkA href={`mailto:${details.email}`} target="_blank">
               <MailIcon />
               {details.email}
             </LinkA>
@@ -47,11 +49,16 @@ const Footer = ({ isHome }) => {
               {details.shortAddress}
             </LinkA>
 
-            <LinkA href="tel:919191991" target="_blank">
+            <LinkA href={`tel:${details.phoneNo}`} target="_blank">
               <CallIcon />
               {details.phoneNo}
             </LinkA>
           </Column1>
+
+          <Column4>
+            <Title>Hours</Title>
+            <SubTitle>Everyday: 11am to 11pm</SubTitle>
+          </Column4>
 
           <Column2>
             <Title>About Us</Title>

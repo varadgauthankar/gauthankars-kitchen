@@ -15,7 +15,6 @@ export const Wrapper = styled.div`
   max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
-  padding: 0 24px;
   text-align: center;
   margin-bottom: 100px;
 
@@ -38,35 +37,29 @@ export const ContentRow = styled.div`
 
 export const Heading = styled.p`
   text-align: center;
-  font-size: 32px;
-  font-weight: 700;
-  color: #fff;
-  margin-bottom: 16px;
-  @media screen and (max-width: 768px) {
-    font-size: 28px;
-    font-weight: 600;
-  }
+  font-size: ${({ isItalic }) => (isItalic ? "60px" : "60px")};
+  color: ${({ isItalic }) => (isItalic ? "#cfa670" : "#fff")};
+  line-height: 1;
+  font-family: ${({ isItalic }) => (isItalic ? "'Kristi', cursive;" : "Lato")};
+
   @media screen and (max-width: 350px) {
-    font-size: 24px;
-    font-weight: 600;
+    font-size: ${({ isItalic }) => (isItalic ? "35px" : "40px")};
+    line-height: 0.8;
   }
 `;
 
 export const Column1 = styled.div`
   text-align: center;
-  margin: 6px;
   grid-area: col1;
 `;
 
 export const Column2 = styled.div`
   grid-area: col2;
-  margin: 6px;
   text-align: center;
 `;
 
 export const Column3 = styled.div`
   grid-area: col3;
-  margin: 6px;
   text-align: center;
 `;
 
@@ -122,7 +115,6 @@ export const FoodImg = styled.img`
   filter: brightness(30%);
   &:hover {
     transform: scale(1.1);
-
     font-size: 24px;
     transition: 0.2s ease-in-out;
   }
