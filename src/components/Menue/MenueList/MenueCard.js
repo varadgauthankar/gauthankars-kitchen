@@ -17,7 +17,7 @@ const MenueCard = ({ itemList, itemCategory }) => {
         <MenueItemCategoryName>{itemCategory}</MenueItemCategoryName>
         <Ul>
           {itemList.map((item) => (
-            <Li key={item.id}>
+            <Li key={item.id} id={item.id}>
               <MenueItemContainer>
                 <MenueItemName>{item.itemName}</MenueItemName>
                 <MenueItemPrice>{item.itemPrice}</MenueItemPrice>

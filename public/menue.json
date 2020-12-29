@@ -1,4 +1,164 @@
 {
+  "softDrink": [
+    {
+      "id": 1,
+      "itemName": "Coke M/L",
+      "itemPrice": "50/60"
+    },
+    {
+      "id": 2,
+      "itemName": "Fanta M/L",
+      "itemPrice": "50/60"
+    },
+    {
+      "id": 3,
+      "itemName": "Sprite M/L",
+      "itemPrice": "50/60"
+    },
+    {
+      "id": 4,
+      "itemName": "Diet Coke",
+      "itemPrice": 50
+    }
+  ],
+  "coolers": [
+    {
+      "id": 1,
+      "itemName": "Fresh lime Soda",
+      "itemPrice": 50
+    },
+    {
+      "id": 2,
+      "itemName": "Watermelon",
+      "itemPrice": 90
+    },
+    {
+      "id": 3,
+      "itemName": "Pineapple",
+      "itemPrice": 90
+    },
+    {
+      "id": 4,
+      "itemName": "Orange",
+      "itemPrice": 90
+    },
+    {
+      "id": 5,
+      "itemName": "Cran Berry",
+      "itemPrice": 90
+    },
+    {
+      "id": 6,
+      "itemName": "Virgin Mojito",
+      "itemPrice": 90
+    },
+    {
+      "id": 7,
+      "itemName": "Mixed Fruit",
+      "itemPrice": 90
+    },
+    {
+      "id": 8,
+      "itemName": "Virgin Mojito",
+      "itemPrice": 90
+    },
+    {
+      "id": 9,
+      "itemName": "Masala Majic Mojito",
+      "itemPrice": 120
+    },
+    {
+      "id": 10,
+      "itemName": "Blue Mistique",
+      "itemPrice": 90
+    },
+    {
+      "id": 11,
+      "itemName": "Fruit Punch",
+      "itemPrice": 120
+    },
+    {
+      "id": 12,
+      "itemName": "Pinacolada",
+      "itemPrice": 110
+    },
+    {
+      "id": 13,
+      "itemName": "Ice Tea",
+      "itemPrice": 80
+    },
+    {
+      "id": 14,
+      "itemName": "Ice Tea Lemon",
+      "itemPrice": 90
+    }
+  ],
+  "iceCreamShake": [
+    {
+      "id": 1,
+      "itemName": "Bournvita",
+      "itemPrice": 90
+    },
+    {
+      "id": 2,
+      "itemName": "Strawberry",
+      "itemPrice": 90
+    },
+    {
+      "id": 3,
+      "itemName": "Vanilla",
+      "itemPrice": 90
+    },
+    {
+      "id": 4,
+      "itemName": "Chocolate",
+      "itemPrice": 90
+    },
+    {
+      "id": 5,
+      "itemName": "Mango",
+      "itemPrice": 100
+    },
+    {
+      "id": 6,
+      "itemName": "Oreo",
+      "itemPrice": 100
+    },
+    {
+      "id": 7,
+      "itemName": "Cold Coffee",
+      "itemPrice": 90
+    }
+  ],
+  "iceCream": [
+    {
+      "id": 1,
+      "itemName": "Vanilla Ice Cream",
+      "itemPrice": "50/70"
+    },
+    {
+      "id": 2,
+      "itemName": "Ice Cream (All Flavours)",
+      "itemPrice": "70/100"
+    }
+  ],
+  "dessert": [
+    {
+      "id": 1,
+      "itemName": "Seradurra",
+      "itemPrice": 80
+    },
+    {
+      "id": 2,
+      "itemName": "Fruit Truffle",
+      "itemPrice": 80
+    },
+    {
+      "id": 3,
+      "itemName": "ChocoLava",
+      "itemPrice": 70
+    }
+  ],
   "burger": [
     {
       "id": 1,
@@ -7,22 +167,22 @@
     },
     {
       "id": 2,
-      "itemName": "Grill Chicekn Burger",
+      "itemName": "Grill Chicken Burger",
       "itemPrice": 120
     },
     {
       "id": 3,
-      "itemName": "Crispy Chicekn Burger",
+      "itemName": "Crispy Chicken Burger",
       "itemPrice": 120
     },
     {
       "id": 4,
       "itemName": "Hot and Spicy Burger",
-      "itemPrice": 130
+      "itemPrice": 140
     },
     {
       "id": 5,
-      "itemName": "Double grill burger",
+      "itemName": "Double Grill Burger",
       "itemPrice": 150
     },
     {
@@ -32,8 +192,23 @@
     },
     {
       "id": 7,
+      "itemName": "Double Hot and Spicy Burger",
+      "itemPrice": 165
+    },
+    {
+      "id": 8,
       "itemName": "Veg Burger",
       "itemPrice": 110
+    },
+    {
+      "id": 9,
+      "itemName": "Double Veg Burger",
+      "itemPrice": 135
+    },
+    {
+      "id": 10,
+      "itemName": "Extra Cheese",
+      "itemPrice": 20
     }
   ],
   "wraps": [
@@ -49,8 +224,8 @@
     },
     {
       "id": 3,
-      "itemName": "Chicken Maxicana Wrap",
-      "itemPrice": 140
+      "itemName": "Maxican Quesadila",
+      "itemPrice": 130
     },
     {
       "id": 4,
@@ -59,35 +234,30 @@
     },
     {
       "id": 5,
-      "itemName": "Veg Maxicana Wrap",
+      "itemName": "Veg Maxican Quesadila",
       "itemPrice": 110
-    },
-    {
-      "id": 6,
-      "itemName": "Q Maxicana Wrap",
-      "itemPrice": 120
     }
   ],
   "tctFavorite": [
     {
       "id": 1,
       "itemName": "Chicken Peri Peri",
-      "itemPrice": 150
+      "itemPrice": 140
     },
     {
       "id": 2,
       "itemName": "Chicken Spicy",
-      "itemPrice": 150
+      "itemPrice": 140
     },
     {
       "id": 3,
       "itemName": "Chicken Crispy Thai",
-      "itemPrice": 100
+      "itemPrice": 90
     },
     {
       "id": 4,
       "itemName": "BBQ Grilled Thai",
-      "itemPrice": 100
+      "itemPrice": 90
     },
     {
       "id": 5,
@@ -106,18 +276,18 @@
     },
     {
       "id": 8,
-      "itemName": "Crispy Fired Chicken",
-      "itemPrice": 100
+      "itemName": "Chicken Nuggets 3 pc.",
+      "itemPrice": 60
     },
     {
       "id": 9,
-      "itemName": "Chicken Nuggets",
+      "itemName": "Chicken Nuggets 5 pc.",
       "itemPrice": 100
     },
     {
       "id": 10,
       "itemName": "Chicken Pops",
-      "itemPrice": 110
+      "itemPrice": 100
     },
     {
       "id": 11,
@@ -127,55 +297,45 @@
     {
       "id": 12,
       "itemName": "Chicken Lollies",
-      "itemPrice": 150
+      "itemPrice": 80
     }
   ],
   "sides": [
     {
       "id": 1,
-      "itemName": "Potato Veggies",
-      "itemPrice": 130
+      "itemName": "French Fries Salted R/L",
+      "itemPrice": "70 / 90"
     },
     {
       "id": 2,
-      "itemName": "French Fries (Simply Salted)",
-      "itemPrice": 75
+      "itemName": "French Fries Spicy R/L",
+      "itemPrice": "95 / 105"
     },
     {
       "id": 3,
-      "itemName": "French Fries (Spicy)",
-      "itemPrice": 95
+      "itemName": "Potato Wedges",
+      "itemPrice": 130
     },
     {
       "id": 4,
       "itemName": "Chilly Garlic Potato Shots",
       "itemPrice": 110
-    },
-    {
-      "id": 5,
-      "itemName": "BBQ Dips",
-      "itemPrice": 20
-    },
-    {
-      "id": 6,
-      "itemName": "Cheesy Dips",
-      "itemPrice": 20
     }
   ],
   "tctCombo": [
     {
       "id": 1,
-      "itemName": "Chicken Burger + Coke",
+      "itemName": "Chicken Burger + Coke(m)",
       "itemPrice": 165
     },
     {
       "id": 2,
-      "itemName": "Chicken Burger + Fries(R) + Coke",
+      "itemName": "Chicken Burger + Fries(R) + Coke(m)",
       "itemPrice": 235
     },
     {
       "id": 3,
-      "itemName": "Chicken Burger + Fries(R) + Strips + Coke",
+      "itemName": "Chicken Burger + Fries(R) + Strips + Coke(m)",
       "itemPrice": 375
     }
   ],
@@ -183,12 +343,43 @@
     {
       "id": 1,
       "itemName": "2 Chicken Burger + 1 Fires(R) + 2 Coke",
-      "itemPrice": 0
+      "itemPrice": 399
     },
     {
       "id": 2,
       "itemName": "2 TCT's Special Burger + 2 Coke",
-      "itemPrice": 0
+      "itemPrice": 789
+    }
+  ],
+  "dips": [
+    {
+      "id": 1,
+      "itemName": "BBQ Dips",
+      "itemPrice": 20
+    },
+    {
+      "id": 2,
+      "itemName": "Cheesy Dips",
+      "itemPrice": 20
+    }
+  ],
+  "special": [
+    {
+      "id": 1,
+      "itemName": "Chicken Sizler",
+      "itemPrice": 200
+    }
+  ],
+  "soup": [
+    {
+      "id": 1,
+      "itemName": "Chicken Soup",
+      "itemPrice": 80
+    },
+    {
+      "id": 2,
+      "itemName": "Veg Soup",
+      "itemPrice": 70
     }
   ]
 }
