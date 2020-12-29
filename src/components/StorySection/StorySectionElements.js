@@ -96,7 +96,7 @@ export const Heading = styled.p`
   font-size: ${({ isItalic }) => (isItalic ? "60px" : "60px")};
   text-align: center;
   color: ${({ isItalic }) => (isItalic ? colors.golden : colors.black)};
-  line-height: 1;
+  line-height: 0.8;
   font-weight: ${({ isItalic }) => (isItalic ? "300" : "400")};
   font-family: ${({ isItalic }) => (isItalic ? "'Kristi', cursive;" : "Lato")};
 
@@ -109,7 +109,8 @@ export const HeadingMobile = styled.p`
   font-size: ${({ isItalic }) => (isItalic ? "60px" : "60px")};
   text-align: center;
   color: ${({ isItalic }) => (isItalic ? colors.golden : colors.black)};
-  line-height: 1;
+  line-height: 0.8;
+
   font-weight: ${({ isItalic }) => (isItalic ? "300" : "400")};
   font-family: ${({ isItalic }) => (isItalic ? "'Kristi', cursive;" : "Lato")};
 

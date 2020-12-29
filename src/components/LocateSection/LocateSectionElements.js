@@ -54,7 +54,7 @@ export const Heading = styled.p`
   color: ${({ isItalic }) => (isItalic ? colors.golden : colors.black)};
   font-size: ${({ isItalic }) => (isItalic ? "60px" : "60px")};
   font-family: ${({ isItalic }) => (isItalic ? "'Kristi', cursive" : "Lato")};
-  line-height: 1;
+  line-height: 0.8;
   margin-bottom: ${({ isItalic }) => (isItalic ? "0" : "20px")};
 
   @media screen and (max-width: 350px) {
