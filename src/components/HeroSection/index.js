@@ -11,7 +11,6 @@ import {
   HeroBg,
   HeroContainer,
   LogoImage,
-  TagLine,
 } from "./HeroSectionElements";
 
 import { FaChevronRight, FaArrowRight } from "react-icons/fa";
