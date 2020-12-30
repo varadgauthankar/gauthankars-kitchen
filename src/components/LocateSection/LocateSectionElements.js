@@ -24,8 +24,8 @@ export const Wrapper = styled.div`
   @media screen and (max-width: 768px) {
     margin-bottom: 0;
   }
-  @media screen and (max-width: 350px) {
-    /* margin-top: 50px; */
+  @media screen and (max-width: 360) {
+    margin-bottom: 0;
   }
 `;
 
@@ -57,8 +57,8 @@ export const Heading = styled.p`
   line-height: 0.8;
   margin-bottom: ${({ isItalic }) => (isItalic ? "0" : "20px")};
 
-  @media screen and (max-width: 350px) {
-    font-size: 28px;
+  @media screen and (max-width: 360px) {
+    font-size: 50px;
   }
 `;
 
@@ -71,7 +71,7 @@ export const Address = styled.p`
     font-size: 20px;
   }
 
-  @media screen and (max-width: 350px) {
+  @media screen and (max-width: 360px) {
     font-size: 18px;
   }
 `;
@@ -98,7 +98,7 @@ export const LocationImgWrap = styled.div`
     width: 80vw;
   }
 
-  @media screen and (max-width: 350px) {
+  @media screen and (max-width: 360px) {
     margin: 20px auto;
   }
 

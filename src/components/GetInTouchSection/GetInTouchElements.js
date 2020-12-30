@@ -65,7 +65,7 @@ export const ContentWrap = styled.div`
     margin-bottom: 10px;
   }
 
-  @media screen and (max-width: 350px) {
+  @media screen and (max-width: 360px) {
     margin-bottom: 15px;
   }
 `;
@@ -79,7 +79,8 @@ export const Title = styled.p`
   @media screen and (max-width: 768px) {
   }
 
-  @media screen and (max-width: 350px) {
+  @media screen and (max-width: 360px) {
+    font-size: 50px;
   }
 `;
 
@@ -89,9 +90,9 @@ export const Text = styled.a`
   @media screen and (max-width: 768px) {
     margin: 8px 0;
   }
-  @media screen and (max-width: 350px) {
+  @media screen and (max-width: 360px) {
     font-size: 14px;
-    margin: 10px 0;
+    margin: 4px 0;
   }
 `;
 
@@ -134,7 +135,7 @@ export const FormContainer = styled.div`
     width: 100%;
   }
 
-  @media screen and (max-width: 350px) {
+  @media screen and (max-width: 360px) {
     padding: 12px 12px;
     margin: 10px auto 10px auto;
   }
@@ -154,7 +155,7 @@ export const FormTitle = styled.p`
     margin-bottom: 8px;
   }
 
-  @media screen and (max-width: 350px) {
+  @media screen and (max-width: 360px) {
     font-size: 22px;
     margin-bottom: 6px;
   }
@@ -172,7 +173,7 @@ export const Input = styled.input`
   margin-bottom: 16px;
   outline: none;
 
-  @media screen and (max-width: 350px) {
+  @media screen and (max-width: 360px) {
     height: 30px;
     padding: 3px 6px;
     margin-bottom: 10px;
@@ -191,7 +192,7 @@ export const TextArea = styled.textarea`
   resize: none;
   outline: none;
 
-  @media screen and (max-width: 350px) {
+  @media screen and (max-width: 360px) {
     height: 50px;
     padding: 3px 6px;
     margin-bottom: 4px;

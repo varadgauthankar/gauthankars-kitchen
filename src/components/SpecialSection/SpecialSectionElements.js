@@ -42,8 +42,8 @@ export const Heading = styled.p`
   line-height: 1;
   font-family: ${({ isItalic }) => (isItalic ? "'Kristi', cursive;" : "Lato")};
 
-  @media screen and (max-width: 350px) {
-    font-size: ${({ isItalic }) => (isItalic ? "35px" : "40px")};
+  @media screen and (max-width: 360px) {
+    font-size: 50px;
     line-height: 0.8;
   }
 `;
@@ -87,8 +87,8 @@ export const FoodCard = styled.div`
     margin-right: auto;
   }
 
-  @media screen and (max-width: 350px) {
-    width: 100%;
+  @media screen and (max-width: 360px) {
+    width: 90%;
     height: 18vh;
     margin-left: auto;
     margin-right: auto;

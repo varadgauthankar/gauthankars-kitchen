@@ -60,9 +60,9 @@ export const ImageWrapper = styled.div`
     height: 200px;
   }
 
-  @media screen and (max-width: 350px) {
+  @media screen and (max-width: 360px) {
     width: 100%;
-    height: 22vh;
+    height: 24vh;
     margin: 0px auto;
   }
 
@@ -114,12 +114,8 @@ export const HeadingMobile = styled.p`
   font-weight: ${({ isItalic }) => (isItalic ? "300" : "400")};
   font-family: ${({ isItalic }) => (isItalic ? "'Kristi', cursive;" : "Lato")};
 
-  /* @media screen and (min-width: 768px) {
-    display: none;
-  } */
-
-  @media screen and (max-width: 350px) {
-    font-size: ${({ isItalic }) => (isItalic ? "50px" : "40px")};
+  @media screen and (max-width: 360px) {
+    font-size: 50px;
     line-height: 0.8;
   }
 `;
@@ -128,8 +124,8 @@ export const StoryText = styled.p`
   text-align: center;
   color: #000;
 
-  @media screen and (max-width: 350px) {
-    font-size: 16px;
+  @media screen and (max-width: 360px) {
+    font-size: 18px;
     line-height: 1.2;
   }
 `;
