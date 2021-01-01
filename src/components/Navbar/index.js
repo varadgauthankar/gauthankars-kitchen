@@ -42,7 +42,7 @@ const Navbar = ({ toggle }) => {
           >
             <NavLogoImg src={logo_flame} alt="logo" />
           </NavLogo>
-          <MobileIcon onClick={toggle} alt="logo">
+          <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
 
