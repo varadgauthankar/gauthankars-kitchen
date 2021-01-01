@@ -87,6 +87,7 @@ export const Title = styled.p`
 export const Text = styled.a`
   color: ${colors.white};
   margin: 10px 0;
+
   @media screen and (max-width: 768px) {
     margin: 8px 0;
   }

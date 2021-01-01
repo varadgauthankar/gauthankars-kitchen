@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Video from "../../videos/video.mp4";
+import bg from "../../images/bg.jpg";
 import logo from "../../images/logo/gauthankars_kitchen_flame.svg";
 import { Button } from "../ButtonElement";
 import Spacer from "../Spacer";
@@ -23,11 +23,11 @@ const Hero = () => {
   return (
     <HeroContainer id="home">
       <HeroBg>
-        <BgVideo autoPlay loop muted src={Video} type="video/mp4" />
+        <BgVideo src={bg} />
       </HeroBg>
 
       <ContentWrap>
-        <LogoImage src={logo} />
+        <LogoImage src={logo} alt="logo" />
         <HeadLine>Welcome To Gauthankar's Kitchen</HeadLine>
         {/* <TagLine>Food For The Soul</TagLine> */}
         <Spacer height={12} />

@@ -40,7 +40,7 @@ const Locate = () => {
           </Column1>
           <Column2>
             <LocationImgWrap>
-              <LocationMap src={googleMapUrl} />
+              <LocationMap src={googleMapUrl} title="map" />
             </LocationImgWrap>
           </Column2>
         </LocateContentRow>

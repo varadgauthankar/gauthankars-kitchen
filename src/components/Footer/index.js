@@ -32,8 +32,8 @@ const Footer = ({ isHome }) => {
         <Row>
           <Column0>
             <LinkA href="/">
-              <Logo src={logo_flame} />
-              <LogoFull src={logo_full} />
+              <Logo src={logo_flame} alt="logo" />
+              <LogoFull src={logo_full} alt="logofull" />
             </LinkA>
           </Column0>
           <Column1>
@@ -95,12 +95,12 @@ const Footer = ({ isHome }) => {
           <Column3>
             <Title>Social Media</Title>
 
-            <LinkA href={details.instaLink} target="_blank">
+            <LinkA href={details.instaLink} target="_blank" rel="noopener">
               <InstaIcon />
               Instagram
             </LinkA>
 
-            <LinkA href={details.facebookLink} target="_blank">
+            <LinkA href={details.facebookLink} target="_blank" rel="noopener">
               <FbIcon />
               Facebook
             </LinkA>

@@ -29,7 +29,7 @@ const Story = () => {
         <ContentRow>
           <Column1>
             <ImageWrapper>
-              <Image src={imgf} />
+              <Image src={imgf} alt="story" />
             </ImageWrapper>
           </Column1>
           <Column2>

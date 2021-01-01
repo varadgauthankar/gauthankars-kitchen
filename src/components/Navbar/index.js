@@ -40,9 +40,9 @@ const Navbar = ({ toggle }) => {
             spy={true}
             offset={-80}
           >
-            <NavLogoImg src={logo_flame} />
+            <NavLogoImg src={logo_flame} alt="logo" />
           </NavLogo>
-          <MobileIcon onClick={toggle}>
+          <MobileIcon onClick={toggle} alt="logo">
             <FaBars />
           </MobileIcon>
 

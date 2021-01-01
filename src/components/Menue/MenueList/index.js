@@ -63,7 +63,7 @@ const MenueList = () => {
   };
 
   useEffect(() => {
-    Axios.get("https://gauthankarskitchen.com/menue.json")
+    Axios.get("http://localhost:3000/menue.json")
       .then((response) => {
         setMenueCategories(response.data);
         setIsLoaded(true);

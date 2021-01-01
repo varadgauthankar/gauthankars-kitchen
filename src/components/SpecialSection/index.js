@@ -29,7 +29,7 @@ const Special = ({ toggle }) => {
           <Column1>
             <FoodCardWrapper>
               <FoodCard>
-                <FoodImg src={Img1} />
+                <FoodImg src={Img1} alt="special" />
 
                 <ImageText>Lorem doler</ImageText>
               </FoodCard>
@@ -38,7 +38,7 @@ const Special = ({ toggle }) => {
           <Column2>
             <FoodCardWrapper>
               <FoodCard>
-                <FoodImg src={Img2} />
+                <FoodImg src={Img2} alt="special" />
                 <ImageText>Lorem ipsum</ImageText>
               </FoodCard>
             </FoodCardWrapper>
@@ -46,7 +46,7 @@ const Special = ({ toggle }) => {
           <Column3>
             <FoodCardWrapper>
               <FoodCard>
-                <FoodImg src={Img3} />
+                <FoodImg src={Img3} alt="special" />
                 <ImageText>Sit lorem doler</ImageText>
               </FoodCard>
             </FoodCardWrapper>

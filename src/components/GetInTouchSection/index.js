@@ -56,10 +56,18 @@ const GetInTouch = () => {
 
             <SocialWrap>
               <SocialTitle>Connect with us</SocialTitle>
-              <SocialIcon href={details.instaLink} target="_blank">
+              <SocialIcon
+                href={details.instaLink}
+                target="_blank"
+                rel="noopener"
+              >
                 <InstaIcon />
               </SocialIcon>
-              <SocialIcon href={details.facebookLink} target="_blank">
+              <SocialIcon
+                href={details.facebookLink}
+                target="_blank"
+                rel="noopener"
+              >
                 <FbIcon />
               </SocialIcon>
             </SocialWrap>
@@ -73,14 +81,32 @@ const GetInTouch = () => {
                 action="/form-submitted"
                 data-netlify="true"
               >
-                <input type="hidden" name="form-name" value="contact" />
-                <Input required type="email" name="email" placeholder="Email" />
-                <Input required type="text" name="name" placeholder="Name" />
-                <TextArea
-                  required
-                  name="message"
-                  placeholder="Message"
-                ></TextArea>
+                <label>
+                  <input type="hidden" name="form-name" value="contact" />
+                </label>
+                <label>
+                  {""}
+                  <Input
+                    required
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                  />
+                </label>
+                <label>
+                  {" "}
+                  <Input required type="text" name="name" placeholder="Name" />
+                </label>
+
+                <label>
+                  {" "}
+                  <TextArea
+                    required
+                    name="message"
+                    placeholder="Message"
+                  ></TextArea>
+                </label>
+
                 <Button type="submit">Send</Button>
               </form>
             </FormContainer>

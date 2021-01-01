@@ -28,17 +28,17 @@ export const ContentWrap = styled.div`
   /* margin-bottom: 20vh; */
 `;
 
-export const BgVideo = styled.video`
+export const BgVideo = styled.img`
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
   object-fit: cover;
   background: ${colors.brown};
   filter: brightness(20%);
 `;
 
 export const LogoImage = styled.img`
-  height: 18vh;
+  height: 100px;
+  width: 100px;
   text-align: center;
   margin: 8px 0;
   margin-right: 30px;
