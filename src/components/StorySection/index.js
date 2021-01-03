@@ -13,7 +13,7 @@ import {
   TextWrapper,
   TextWrapperMobile,
 } from "./StorySectionElements";
-import imgf from "../../images/1.jpg";
+import imgf from "../../images/0.jpg";
 import details from "../../utils/details";
 
 const Story = () => {

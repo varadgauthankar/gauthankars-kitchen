@@ -12,11 +12,13 @@ import {
   FoodImg,
   FoodCardWrapper,
   ImageText,
+  ImageTextTag,
+  ImageTextWrapper,
 } from "./SpecialSectionElements";
 
-import Img1 from "../../images/1.jpg";
-import Img2 from "../../images/2.jpg";
-import Img3 from "../../images/3.jpg";
+import Img1 from "../../images/special/1.jpg";
+import Img2 from "../../images/special/2.jpg";
+import Img3 from "../../images/special/3.jpg";
 const Special = ({ toggle }) => {
   return (
     <HeroContainer id="special">
@@ -30,8 +32,10 @@ const Special = ({ toggle }) => {
             <FoodCardWrapper>
               <FoodCard>
                 <FoodImg src={Img1} alt="special" />
-
-                <ImageText>Lorem doler</ImageText>
+                <ImageTextWrapper>
+                  <ImageText>Fish Thali</ImageText>
+                  <ImageTextTag>The classic goan fish Thali</ImageTextTag>
+                </ImageTextWrapper>
               </FoodCard>
             </FoodCardWrapper>
           </Column1>
@@ -39,7 +43,10 @@ const Special = ({ toggle }) => {
             <FoodCardWrapper>
               <FoodCard>
                 <FoodImg src={Img2} alt="special" />
-                <ImageText>Lorem ipsum</ImageText>
+                <ImageTextWrapper>
+                  <ImageText>Chiceken Sizler</ImageText>
+                  <ImageTextTag>The classic goan fish Thali</ImageTextTag>
+                </ImageTextWrapper>
               </FoodCard>
             </FoodCardWrapper>
           </Column2>
@@ -47,7 +54,10 @@ const Special = ({ toggle }) => {
             <FoodCardWrapper>
               <FoodCard>
                 <FoodImg src={Img3} alt="special" />
-                <ImageText>Sit lorem doler</ImageText>
+                <ImageTextWrapper>
+                  <ImageText>TCT's Special Burger</ImageText>
+                  <ImageTextTag>The classic goan fish Thali</ImageTextTag>
+                </ImageTextWrapper>
               </FoodCard>
             </FoodCardWrapper>
           </Column3>

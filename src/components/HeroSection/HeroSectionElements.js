@@ -34,6 +34,17 @@ export const BgVideo = styled.img`
   object-fit: cover;
   background: ${colors.brown};
   filter: brightness(20%);
+  animation: shake 10s;
+  animation-iteration-count: infinite;
+
+  @keyframes shake {
+    0% {
+      transform: translate(0px, 0px);
+    }
+    100% {
+      transform: translate(2px, 2px);
+    }
+  }
 `;
 
 export const LogoImage = styled.img`

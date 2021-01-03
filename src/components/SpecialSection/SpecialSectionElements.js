@@ -95,15 +95,31 @@ export const FoodCard = styled.div`
   }
 `;
 
-export const ImageText = styled.p`
-  font-size: 20px;
-  position: absolute;
-  color: ${colors.white};
+export const ImageTextWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  position: absolute;
+  width: 100%;
+`;
+
+export const ImageText = styled.p`
+  font-size: 28px;
+  color: ${colors.white};
+  text-align: center;
+  line-height: 1;
+  pointer-events: none;
+`;
+
+export const ImageTextTag = styled.p`
+  font-size: 24px;
+  line-height: 1;
+  color: ${colors.white};
   text-align: center;
   pointer-events: none;
+  font-family: "kristi";
 `;
 
 export const FoodImg = styled.img`
