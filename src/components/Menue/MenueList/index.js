@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Axios from "axios";
+
 import {
   MenueContainer,
   Title,
@@ -63,16 +63,15 @@ const MenueList = () => {
   };
 
   useEffect(() => {
-    Axios.get("https://gauthankarskitchen.com/menu.json")
-      .then((response) => {
-        setMenueCategories(response.data);
+    fetch("/menu.json")
+      .then((data) => data.json())
+      .then((data) => {
+        setMenueCategories(data);
         setIsLoaded(true);
-        console.log(response.data);
       })
-      .catch((error) => {
-        console.log(error);
+      .catch((err) => {
         setIsError(true);
-        setIsLoaded(false);
+        console.log(err);
       });
   }, []);
 
