@@ -8,10 +8,10 @@ const resourcesToPreCache = [
   "favicon.ico",
   "logo192.png",
   "logo512.png",
-  "static/js/2.a08c346f.chunk.js",
-  "static/js/main.c559d2bd.chunk.js",
-  "static/js/runtime-main.bf1b1b8d.js",
-  "static/css/main.b5c88dc6.chunk.css",
+  "static/js/0.chunk.js",
+  "static/js/main.chunk.js",
+  "static/js/bundle.js",
+  "static/css/main.chunk.css",
   "static/media/0.83f7d793.jpg",
   "static/media/1.7c5f7d05.jpg",
   "static/media/2.72a6e2ca.jpg",
@@ -30,10 +30,6 @@ self.addEventListener("install", (event) => {
       return cache.addAll(resourcesToPreCache);
     })
   );
-});
-
-self.addEventListener("activate", (event) => {
-  console.log("Activate Event");
 });
 
 self.addEventListener("fetch", (event) => {

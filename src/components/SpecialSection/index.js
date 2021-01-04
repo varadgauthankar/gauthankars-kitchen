@@ -44,8 +44,8 @@ const Special = ({ toggle }) => {
               <FoodCard>
                 <FoodImg src={Img2} alt="special" />
                 <ImageTextWrapper>
-                  <ImageText>Chiceken Sizler</ImageText>
-                  <ImageTextTag>The classic goan fish Thali</ImageTextTag>
+                  <ImageText>Chicken Sizler</ImageText>
+                  <ImageTextTag>The Sizling Chicken</ImageTextTag>
                 </ImageTextWrapper>
               </FoodCard>
             </FoodCardWrapper>
@@ -56,7 +56,7 @@ const Special = ({ toggle }) => {
                 <FoodImg src={Img3} alt="special" />
                 <ImageTextWrapper>
                   <ImageText>TCT's Special Burger</ImageText>
-                  <ImageTextTag>The classic goan fish Thali</ImageTextTag>
+                  <ImageTextTag>TCT's Favorite Burger</ImageTextTag>
                 </ImageTextWrapper>
               </FoodCard>
             </FoodCardWrapper>

@@ -19,8 +19,6 @@ import {
 import details from "../../utils/details";
 
 const Locate = () => {
-  const googleMapUrl =
-    "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d808.2537987579722!2d73.82365526674882!3d15.499234954672394!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfc08bfddf0ddd%3A0xd6c093436aef4d4!2sChicken%20Food%20Court%20(CFC)!5e0!3m2!1sen!2sin!4v1609052269772!5m2!1sen!2sin";
   return (
     <HeroContainer id="locate">
       <Wrapper>
@@ -40,7 +38,10 @@ const Locate = () => {
           </Column1>
           <Column2>
             <LocationImgWrap>
-              <LocationMap src={googleMapUrl} title="map" />
+              <LocationMap
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d831.9368181000686!2d73.82398842729745!3d15.499388685415934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfc1e1e0c3ffa9%3A0xf332b2f7b529c0ad!2sGauthankar&#39;s%20Kitchen!5e0!3m2!1sen!2sin!4v1609776856408!5m2!1sen!2sin"
+                title="map"
+              />
             </LocationImgWrap>
           </Column2>
         </LocateContentRow>
