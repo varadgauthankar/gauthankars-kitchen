@@ -39,10 +39,13 @@ export const BgVideo = styled.img`
 
   @keyframes shake {
     0% {
-      transform: translate(0px, 0px);
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
     }
     100% {
-      transform: translate(2px, 2px);
+      transform: scale(1);
     }
   }
 `;

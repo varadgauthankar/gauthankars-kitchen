@@ -121,15 +121,16 @@ const MenueList = () => {
 
             {/* //! Bar Menue */}
 
-            <HeadingImgWrap>
+            {/* <HeadingImgWrap>
               <HeadingImg src={bar} />
             </HeadingImgWrap>
-            {/* <Heading>gauthankars kicthen</Heading> */}
+
+            
             <MenueGrid>
               <Column1>"pls work"</Column1>
 
               <Column2>"pls work"</Column2>
-            </MenueGrid>
+            </MenueGrid> */}
           </div>
         ) : (
           <FailedToLoad>

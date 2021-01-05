@@ -110,7 +110,7 @@ export const NavBtnLink = styled(LinkRouter)`
   background: ${colors.red};
   white-space: nowrap;
   padding: 10px 22px;
-  color: ${colors.white};
+  color: ${colors.black};
   font-size: 16px;
   outline: none;
   border: none;
