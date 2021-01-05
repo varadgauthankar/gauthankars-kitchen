@@ -35,15 +35,12 @@ const GetInTouch = () => {
               <Title isItalic={true}>Get In Touch</Title>
               <Title>Contact Us</Title>
 
-              <Text
-                href="mailto:contact@gauthankarskitchen.com"
-                target="_blank"
-              >
+              <Text href={"mailto:" + details.email} target="_blank">
                 <MailIcon />
                 {details.email}
               </Text>
 
-              <Text href="tel:1234657890" target="_blank">
+              <Text href={"tel:" + details.phoneNo} target="_blank">
                 <CallIcon />
                 {details.phoneNo}
               </Text>
@@ -84,28 +81,16 @@ const GetInTouch = () => {
                 <label>
                   <input type="hidden" name="form-name" value="contact" />
                 </label>
-                <label>
-                  {""}
-                  <Input
-                    required
-                    type="email"
-                    name="email"
-                    placeholder="Email"
-                  />
-                </label>
-                <label>
-                  {" "}
-                  <Input required type="text" name="name" placeholder="Name" />
-                </label>
 
-                <label>
-                  {" "}
-                  <TextArea
-                    required
-                    name="message"
-                    placeholder="Message"
-                  ></TextArea>
-                </label>
+                <Input required type="email" name="email" placeholder="Email" />
+
+                <Input required type="text" name="name" placeholder="Name" />
+
+                <TextArea
+                  required
+                  name="message"
+                  placeholder="Message"
+                ></TextArea>
 
                 <Button type="submit">Send</Button>
               </form>
