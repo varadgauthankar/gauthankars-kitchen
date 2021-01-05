@@ -78,9 +78,7 @@ const GetInTouch = () => {
                 action="/form-submitted"
                 data-netlify="true"
               >
-                <label>
-                  <input type="hidden" name="form-name" value="contact" />
-                </label>
+                <input type="hidden" name="form-name" value="contact" />
 
                 <Input required type="email" name="email" placeholder="Email" />
 
