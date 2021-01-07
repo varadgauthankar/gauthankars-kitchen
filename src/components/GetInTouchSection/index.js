@@ -75,7 +75,7 @@ const GetInTouch = () => {
               <form
                 name="contact"
                 method="POST"
-                action="/submitted"
+                action="/form-submitted"
                 data-netlify="true"
               >
                 <input type="hidden" name="form-name" value="contact" />
