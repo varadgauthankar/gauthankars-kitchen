@@ -2,11 +2,11 @@ import styled from "styled-components";
 import colors from "../../utils/colors";
 
 export const HeroContainer = styled.div`
-  background: ${colors.white};
+  background: ${({ isDark }) => (isDark ? colors.brown : colors.white)};
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   z-index: 1;
 `;
 
@@ -18,10 +18,9 @@ export const Wrapper = styled.div`
   margin-left: auto;
   padding: 0 24px;
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 
   @media screen and (max-width: 768px) {
-    margin-bottom: 0;
     margin-top: 60px;
   }
 `;
@@ -95,7 +94,9 @@ export const TextWrapperMobile = styled.div`
 export const Heading = styled.p`
   font-size: ${({ isItalic }) => (isItalic ? "60px" : "60px")};
   text-align: center;
-  color: ${({ isItalic }) => (isItalic ? colors.golden : colors.black)};
+  color: ${({ isItalic, isDark }) =>
+    isItalic ? colors.golden : isDark ? colors.white : colors.black};
+
   line-height: 0.8;
   font-weight: ${({ isItalic }) => (isItalic ? "300" : "400")};
   font-family: ${({ isItalic }) => (isItalic ? "'Kristi', cursive;" : "Lato")};
@@ -108,8 +109,9 @@ export const Heading = styled.p`
 export const HeadingMobile = styled.p`
   font-size: ${({ isItalic }) => (isItalic ? "60px" : "60px")};
   text-align: center;
-  color: ${({ isItalic }) => (isItalic ? colors.golden : colors.black)};
   line-height: 0.8;
+  color: ${({ isItalic, isDark }) =>
+    isItalic ? colors.golden : isDark ? colors.white : colors.black};
 
   font-weight: ${({ isItalic }) => (isItalic ? "300" : "400")};
   font-family: ${({ isItalic }) => (isItalic ? "'Kristi', cursive;" : "Lato")};
@@ -122,10 +124,21 @@ export const HeadingMobile = styled.p`
 export const StoryText = styled.p`
   font-size: 18px;
   text-align: center;
-  color: #000;
+  color: ${({ isDark }) => (isDark ? colors.white : colors.black)};
 
   @media screen and (max-width: 360px) {
     font-size: 18px;
     line-height: 1.2;
+  }
+`;
+
+export const HighlightedText = styled.a`
+  background-color: ${colors.lightGolden};
+  padding: 0 5px;
+  border-radius: 8px;
+  color: ${({ isDark }) => (isDark ? colors.white : colors.black)};
+
+  :hover {
+    background-color: ${colors.golden};
   }
 `;

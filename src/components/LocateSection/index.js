@@ -18,18 +18,20 @@ import {
 } from "../LocateSection/LocateSectionElements";
 import details from "../../utils/details";
 
-const Locate = () => {
+const Locate = ({ isDark }) => {
   return (
-    <HeroContainer id="locate">
+    <HeroContainer id="locate" isDark={isDark}>
       <Wrapper>
         <LocateContentRow>
           <Column1>
-            <Heading isItalic={true}>Find us</Heading>
-            <Heading>Locate Us</Heading>
-            <Address>{details.address}</Address>
+            <Heading isDark={isDark} isItalic={true}>
+              Find us
+            </Heading>
+            <Heading isDark={isDark}>Locate Us</Heading>
+            <Address isDark={isDark}>{details.address}</Address>
             <br />
-            <HourTitle>Hours</HourTitle>
-            <Day>Everyday: 11am to 11pm</Day>
+            <HourTitle isDark={isDark}>Hours</HourTitle>
+            <Day isDark={isDark}>Everyday: 11am to 11pm</Day>
             <BtnWrap>
               <Button to="/direction" target="_blank">
                 Direction <DirectionIcon />

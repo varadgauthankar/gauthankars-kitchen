@@ -4,11 +4,12 @@ import { MdDirections } from "react-icons/md";
 import colors from "../../utils/colors";
 
 export const HeroContainer = styled.div`
-  background: ${colors.white};
+  background: ${({ isDark }) => (isDark ? colors.brown : colors.white)};
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+
   z-index: 1;
 `;
 export const Wrapper = styled.div`
@@ -19,13 +20,14 @@ export const Wrapper = styled.div`
   margin-left: auto;
   padding: 0 24px;
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
+  margin-top: 60px;
 
   @media screen and (max-width: 768px) {
-    margin-bottom: 0;
+    margin-bottom: 60px;
   }
   @media screen and (max-width: 360) {
-    margin-bottom: 0;
+    margin-bottom: 40;
   }
 `;
 
@@ -51,7 +53,8 @@ export const Column2 = styled.div`
 `;
 
 export const Heading = styled.p`
-  color: ${({ isItalic }) => (isItalic ? colors.golden : colors.black)};
+  color: ${({ isItalic, isDark }) =>
+    isItalic ? colors.golden : isDark ? colors.white : colors.black};
   font-size: ${({ isItalic }) => (isItalic ? "60px" : "60px")};
   font-family: ${({ isItalic }) => (isItalic ? "'Kristi', cursive" : "Lato")};
   line-height: 0.8;
@@ -63,7 +66,8 @@ export const Heading = styled.p`
 `;
 
 export const Address = styled.p`
-  color: ${colors.black};
+  color: ${({ isDark }) => (isDark ? colors.white : colors.black)};
+
   font-size: 22px;
   line-height: 1.4;
 
@@ -80,10 +84,12 @@ export const HourTitle = styled.p`
   font-size: 26px;
   font-weight: bold;
   font-family: "lato";
+  color: ${({ isDark }) => (isDark ? colors.white : colors.black)};
 `;
 
 export const Day = styled.p`
   font-size: 20;
+  color: ${({ isDark }) => (isDark ? colors.white : colors.black)};
 `;
 
 export const LocationImgWrap = styled.div`

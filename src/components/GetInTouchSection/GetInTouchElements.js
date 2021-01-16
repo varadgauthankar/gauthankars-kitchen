@@ -10,11 +10,12 @@ import {
 } from "react-icons/fa";
 
 export const HeroContainer = styled.div`
-  background: ${colors.brown};
+  background: ${({ isDark }) => (isDark ? colors.brown : colors.white)};
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+
   z-index: 1;
 `;
 
@@ -25,10 +26,10 @@ export const Wrapper = styled.div`
   margin-left: auto;
   padding: 0 24px;
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 
   @media screen and (max-width: 768px) {
-    margin-bottom: 0;
+    margin-bottom: 60px;
     margin-top: 60px;
   }
 `;
@@ -71,7 +72,8 @@ export const ContentWrap = styled.div`
 `;
 
 export const Title = styled.p`
-  color: ${({ isItalic }) => (isItalic ? colors.golden : colors.white)};
+  color: ${({ isItalic, isDark }) =>
+    isItalic ? colors.golden : isDark ? colors.white : colors.black};
   font-size: ${({ isItalic }) => (isItalic ? "60px" : "60px")};
   font-family: ${({ isItalic }) => (isItalic ? "'Kristi', cursive" : "Lato")};
   line-height: 1;
@@ -85,7 +87,7 @@ export const Title = styled.p`
 `;
 
 export const Text = styled.a`
-  color: ${colors.white};
+  color: ${({ isDark }) => (isDark ? colors.white : colors.black)};
   margin: 10px 0;
 
   @media screen and (max-width: 768px) {
@@ -98,17 +100,20 @@ export const Text = styled.a`
 `;
 
 export const MailIcon = styled(Mail)`
-  color: ${colors.white};
+  color: ${({ isDark }) => (isDark ? colors.white : colors.black)};
+
   margin-right: 10px;
 `;
 
 export const CallIcon = styled(Call)`
-  color: ${colors.white};
+  color: ${({ isDark }) => (isDark ? colors.white : colors.black)};
+
   margin-right: 10px;
 `;
 
 export const MapIcon = styled(Map)`
-  color: ${colors.white};
+  color: ${({ isDark }) => (isDark ? colors.white : colors.black)};
+
   margin-right: 10px;
 `;
 
@@ -228,7 +233,7 @@ export const SocialWrap = styled.div`
 `;
 
 export const SocialTitle = styled.p`
-  color: ${colors.white};
+  color: ${({ isDark }) => (isDark ? colors.white : colors.black)};
   margin-bottom: 4px;
 `;
 

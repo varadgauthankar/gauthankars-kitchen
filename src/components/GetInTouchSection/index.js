@@ -25,34 +25,44 @@ import {
 
 import details from "../../utils/details";
 
-const GetInTouch = () => {
+const GetInTouch = ({ isDark }) => {
   return (
-    <HeroContainer id="contact">
+    <HeroContainer id="contact" isDark={isDark}>
       <Wrapper>
         <Row>
           <Column1>
             <ContentWrap>
-              <Title isItalic={true}>Get In Touch</Title>
-              <Title>Contact Us</Title>
+              <Title isItalic={true} isDark={isDark}>
+                Get In Touch
+              </Title>
+              <Title isDark={isDark}>Contact Us</Title>
 
-              <Text href={"mailto:" + details.email} target="_blank">
+              <Text
+                isDark={isDark}
+                href={"mailto:" + details.email}
+                target="_blank"
+              >
                 <MailIcon />
                 {details.email}
               </Text>
 
-              <Text href={"tel:" + details.phoneNo} target="_blank">
+              <Text
+                isDark={isDark}
+                href={"tel:" + details.phoneNo}
+                target="_blank"
+              >
                 <CallIcon />
                 {details.phoneNo}
               </Text>
 
-              <Text href="/direction" target="_blank">
+              <Text isDark={isDark} href="/direction" target="_blank">
                 <MapIcon />
                 {details.shortAddress}
               </Text>
             </ContentWrap>
 
             <SocialWrap>
-              <SocialTitle>Connect with us</SocialTitle>
+              <SocialTitle isDark={isDark}>Connect with us</SocialTitle>
               <SocialIcon
                 href={details.instaLink}
                 target="_blank"
@@ -71,7 +81,7 @@ const GetInTouch = () => {
           </Column1>
           <Column2>
             <FormContainer>
-              <FormTitle>Send us a message</FormTitle>
+              <FormTitle isDark={isDark}>Send us a message</FormTitle>
               <form
                 name="contact"
                 method="POST"

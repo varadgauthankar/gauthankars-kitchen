@@ -7,7 +7,7 @@ import Special from "../../components/SpecialSection";
 import Story from "../../components/StorySection";
 import Footer from "../../components/Footer";
 import GetInTouch from "../../components/GetInTouchSection";
-// import Gallery from "../components/GallerySection"; //! gallery section
+import Gallery from "../../components/GallerySection";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,12 +20,12 @@ const Home = () => {
     <>
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
-      <Hero />
-      <Story />
-      <Special />
-      {/* <Gallery /> */}
-      <Locate />
-      <GetInTouch />
+      <Hero isDark={true} />
+      <Story isDark={false} />
+      <Special isDark={true} />
+      <Gallery isDark={false} />
+      <Locate isDark={true} />
+      <GetInTouch isDark={false} />
       <Footer isHome={true} />
     </>
   );

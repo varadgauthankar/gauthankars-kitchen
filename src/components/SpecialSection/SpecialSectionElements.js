@@ -1,11 +1,12 @@
 import styled from "styled-components";
 import colors from "../../utils/colors";
 export const HeroContainer = styled.div`
-  background: ${colors.brown};
+  background: ${({ isDark }) => (isDark ? colors.brown : colors.white)};
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+
   z-index: 1;
 `;
 
@@ -16,10 +17,10 @@ export const Wrapper = styled.div`
   margin-right: auto;
   margin-left: auto;
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 
   @media screen and (max-width: 768px) {
-    margin-bottom: 0;
+    margin-bottom: 60px;
     margin-top: 60px;
   }
 `;
@@ -38,7 +39,8 @@ export const ContentRow = styled.div`
 export const Heading = styled.p`
   text-align: center;
   font-size: ${({ isItalic }) => (isItalic ? "60px" : "60px")};
-  color: ${({ isItalic }) => (isItalic ? colors.golden : colors.white)};
+  color: ${({ isItalic, isDark }) =>
+    isItalic ? colors.golden : isDark ? colors.white : colors.black};
   line-height: 1;
   font-family: ${({ isItalic }) => (isItalic ? "'Kristi', cursive;" : "Lato")};
 

@@ -19,12 +19,14 @@ import {
 import Img1 from "../../images/special/1.jpg";
 import Img2 from "../../images/special/2.jpg";
 import Img3 from "../../images/special/3.jpg";
-const Special = ({ toggle }) => {
+const Special = ({ toggle, isDark }) => {
   return (
-    <HeroContainer id="special">
+    <HeroContainer id="special" isDark={isDark}>
       <Wrapper>
-        <Heading isItalic={true}>For your tastebuds</Heading>
-        <Heading>Our Special</Heading>
+        <Heading isItalic={true} isDark>
+          For your tastebuds
+        </Heading>
+        <Heading isDark={isDark}>Our Special</Heading>
         <br />
 
         <ContentRow>

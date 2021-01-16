@@ -4,6 +4,7 @@ const colors = {
   black: "#000000",
   white: "#ffffff",
   golden: "#cfa670",
+  lightGolden: "#dbc9b2",
   red: "#ff2929",
   instagram: "#e1306c;",
   facebook: "#4267b2",

@@ -4,12 +4,18 @@ const details = {
   phoneNo: "+91 7887559977",
   email: "gauthankarskitchen@gmail.com",
   instaLink: "https://instagram.com/gauthankarskitchen",
-  facebookLink: "https://facebook.com/gauthankarskitchen",
+  facebookLink: "https://facebook.com/gauthankarskitchen.panaji",
 
   about: {
     line1:
-      "Our mission at Gauthankar's Kitchen is to celebrate the bounty of flavours as family and friends gather to share a good time over a great meal. We promise to entertain you with a feast not only for your eyes, but your taste buds as well.",
+      "As our ancestors were foodies it is that what we inherited. Our grand father Mr. Krishna S. Gauthankar started his small cafe named as CASA DE GAONTONKAR. ",
+    line2:
+      "After him it was his son Mr. Shivram K. Gauthankar who tried to live his dream. And now after opening this new outlet we want to share our loving hospitality we give at our present day ",
+    bicholimName: "GAUTHANKAR UPHAR GRAHA",
+    line3: " at Bicholim",
   },
+
+  bicholimLocation: "https://g.page/Gauthankar?share",
 };
 
 export default details;
