@@ -22,6 +22,8 @@ import noResult from "../../../images/no_result.svg";
 
 import tct from "../../../images/logo/tct_menue.png";
 import bar from "../../../images/logo/bar_station_menue.png";
+import gk from "../../../images/logo/gauthankars_kitchen_full.svg";
+
 
 import Loading from "react-spinners/MoonLoader";
 
@@ -39,11 +41,20 @@ const MenueList = () => {
   const [sides, setSides] = useState([]);
   const [dips, setDips] = useState([]);
   const [soup, setSoup] = useState([]);
-  const [special, setSpecial] = useState([]);
 
-  const [tctFavorites, setTctFavorites] = useState([]);
+  const [grillChicken, setGrillChicken] = useState([]);
+  const [crispyChicken, setCrispyChicken] = useState([]);
+  const [startersNonVeg, setStartersNonVeg] = useState([]);
+  const [startersVeg, setStartersVeg] = useState([]);
+  const [fishStarters, setFishStarters] = useState([]);
+  const [mainCourseVeg, setMainCourseVeg] = useState([]);
+  const [mainCourseNonVeg, setMainCourseNonVeg] = useState([]);
+  const [thali, setThali] = useState([]);
+  const [fishFry, setfishFry] = useState([]);
+const [indianBread, setIndianBread] = useState([]);
   const [tctCombos, setTctCombos] = useState([]);
   const [tctMealForTwos, setTctMealForTwos] = useState([]);
+  const [tctBucket, setTctBucket] = useState([]);
 
   const setMenueCategories = (response) => {
     setSoftDrink(response.softDrink);
@@ -55,11 +66,20 @@ const MenueList = () => {
     setWraps(response.wraps);
     setSoup(response.soup);
     setDips(response.dips);
-    setTctFavorites(response.tctFavorite);
     setSides(response.sides);
     setTctCombos(response.tctCombo);
     setTctMealForTwos(response.tctMealForTwo);
-    setSpecial(response.special);
+setIndianBread(response.indianBread);
+    setGrillChicken(response.grillChicken);
+    setCrispyChicken(response.crispyChicken);
+    setStartersVeg(response.startersVeg);
+    setStartersNonVeg(response.startersNonVeg);
+    setFishStarters(response.fishStarters);
+    setMainCourseNonVeg(response.mainCourseNonVeg);
+    setMainCourseVeg(response.mainCourseVeg);
+    setThali(response.thali);
+    setfishFry(response.fishFry);
+    setTctBucket(response.tctBucket);
   };
 
   useEffect(() => {
@@ -98,22 +118,24 @@ const MenueList = () => {
                 />
                 <MenueCard itemList={burgers} itemCategory="Burgers" />
                 <MenueCard itemList={wraps} itemCategory="Wraps" />
+                <MenueCard itemList={sides} itemCategory="Sides" />
+
               </Column1>
 
               <Column2>
-                <MenueCard itemList={sides} itemCategory="Sides" />
-                <MenueCard
-                  itemList={tctFavorites}
-                  itemCategory="TCT's Favorite"
-                />
+              <MenueCard itemList={grillChicken} itemCategory="Grill Chicken" />
+              <MenueCard itemList={crispyChicken} itemCategory="Crispy Chicken" />
+
+                
                 <MenueCard itemList={tctCombos} itemCategory="TCT's Combos" />
                 <MenueCard
                   itemList={tctMealForTwos}
                   itemCategory="Meal For Two"
                 />
+              <MenueCard itemList={tctBucket} itemCategory="TCT's Bucket" />
+
                 <MenueCard itemList={soup} itemCategory="Soup" />
                 <MenueCard itemList={dips} itemCategory="Delicious Dips" />
-                <MenueCard itemList={special} itemCategory="Our Speciality" />
                 <MenueCard itemList={dessert} itemCategory="Desserts" />
                 <MenueCard itemList={iceCream} itemCategory="Ice Cream" />
               </Column2>
@@ -121,31 +143,45 @@ const MenueList = () => {
 
             {/* //! Bar Menue */}
 
-            {/* <HeadingImgWrap>
-              <HeadingImg src={bar} />
+            <HeadingImgWrap>
+              <HeadingImg src={gk} />
             </HeadingImgWrap>
 
             
             <MenueGrid>
-              <Column1>"pls work"</Column1>
+              <Column1>
 
-              <Column2>"pls work"</Column2>
-            </MenueGrid> */}
+              <MenueCard itemList={startersVeg} itemCategory="Starters Veg" />
+              <MenueCard itemList={startersNonVeg} itemCategory="Starters Non Veg" />
+              <MenueCard itemList={fishStarters} itemCategory="Fish Starters" />
+              <MenueCard itemList={thali} itemCategory="Goan Thali" />
+              <MenueCard itemList={indianBread} itemCategory="Indian Bread" />
+
+              </Column1>
+
+              <Column2>
+
+              <MenueCard itemList={mainCourseVeg} itemCategory="Maincourse Veg" />
+              <MenueCard itemList={mainCourseNonVeg} itemCategory="Maincourse Non Veg" />
+              <MenueCard itemList={fishFry} itemCategory="Fish Fry (APS)" />
+              
+              </Column2>
+            </MenueGrid>
           </div>
         ) : (
-          <FailedToLoad>
-            {isError ? (
-              <ErrContainer>
-                <NoResultsImg src={noResult} />
-                <ErrMsg>Failed to Load Menue.</ErrMsg>
-              </ErrContainer>
-            ) : (
-              <ErrContainer>
-                <Loading color={"#ff2929"} size={50} />
-              </ErrContainer>
-            )}
-          </FailedToLoad>
-        )}
+            <FailedToLoad>
+              {isError ? (
+                <ErrContainer>
+                  <NoResultsImg src={noResult} />
+                  <ErrMsg>Failed to Load Menue.</ErrMsg>
+                </ErrContainer>
+              ) : (
+                  <ErrContainer>
+                    <Loading color={"#ff2929"} size={50} />
+                  </ErrContainer>
+                )}
+            </FailedToLoad>
+          )}
       </MenueContainer>
     </Wrapper>
   );
