@@ -25,7 +25,7 @@
     {
       "id": 1,
       "itemName": "Fresh lime Soda",
-      "itemPrice": 50
+      "itemPrice": 60
     },
     {
       "id": 2,
@@ -140,13 +140,18 @@
       "id": 2,
       "itemName": "Ice Cream (All Flavours)",
       "itemPrice": "70/100"
+    },
+    {
+      "id": 3,
+      "itemName": "Super Kulfi",
+      "itemPrice": "100/120"
     }
   ],
   "dessert": [
     {
       "id": 1,
       "itemName": "Seradurra",
-      "itemPrice": 80
+      "itemPrice": 70
     },
     {
       "id": 2,
@@ -168,32 +173,32 @@
     {
       "id": 2,
       "itemName": "Grill Chicken Burger",
-      "itemPrice": 120
+      "itemPrice": 130
     },
     {
       "id": 3,
       "itemName": "Crispy Chicken Burger",
-      "itemPrice": 120
+      "itemPrice": 130
     },
     {
       "id": 4,
       "itemName": "Hot and Spicy Burger",
-      "itemPrice": 140
+      "itemPrice": 150
     },
     {
       "id": 5,
       "itemName": "Double Grill Burger",
-      "itemPrice": 150
+      "itemPrice": 160
     },
     {
       "id": 6,
       "itemName": "Double Crispy Burger",
-      "itemPrice": 150
+      "itemPrice": 160
     },
     {
       "id": 7,
       "itemName": "Double Hot and Spicy Burger",
-      "itemPrice": 165
+      "itemPrice": 175
     },
     {
       "id": 8,
@@ -203,7 +208,7 @@
     {
       "id": 9,
       "itemName": "Double Veg Burger",
-      "itemPrice": 135
+      "itemPrice": 140
     },
     {
       "id": 10,
@@ -215,171 +220,509 @@
     {
       "id": 1,
       "itemName": "Chicken Burrito",
-      "itemPrice": 120
+      "itemPrice": 130
     },
     {
       "id": 2,
       "itemName": "Chicken Tikka Wrap",
-      "itemPrice": 130
+      "itemPrice": 140
     },
     {
       "id": 3,
-      "itemName": "Maxican Quesadila",
-      "itemPrice": 130
+      "itemName": "Mexican Quesadila (chicken)",
+      "itemPrice": 140
     },
     {
       "id": 4,
       "itemName": "Veg Wrap",
-      "itemPrice": 100
+      "itemPrice": 110
     },
     {
       "id": 5,
-      "itemName": "Veg Maxican Quesadila",
-      "itemPrice": 110
+      "itemName": "Mexican Quesadila veg",
+      "itemPrice": 120
     }
   ],
-  "tctFavorite": [
+  "grillChicken": [
     {
       "id": 1,
-      "itemName": "Chicken Peri Peri",
-      "itemPrice": 140
+      "itemName": "Chicken Peri Peri Leg",
+      "itemPrice": 160
     },
     {
       "id": 2,
-      "itemName": "Chicken Spicy",
-      "itemPrice": 140
+      "itemName": "Chicken Spicy Leg",
+      "itemPrice": 160
     },
     {
       "id": 3,
-      "itemName": "Chicken Crispy Thai",
-      "itemPrice": 90
+      "itemName": "BBQ Grilled Thai",
+      "itemPrice": 100
     },
     {
       "id": 4,
-      "itemName": "BBQ Grilled Thai",
-      "itemPrice": 90
-    },
-    {
-      "id": 5,
       "itemName": "Jamaican D'Stick",
       "itemPrice": 90
     },
     {
-      "id": 6,
+      "id": 5,
+      "itemName": "BBQ Wings 5 pc.",
+      "itemPrice": 140
+    }
+  ],
+  "crispyChicken": [
+    {
+      "id": 1,
+      "itemName": "Crunchy Strips 4 pc.",
+      "itmePrice": 155
+    },
+    {
+      "id": 2,
+      "itemName": "Crispy thigh",
+      "itmePrice": 100
+    },
+    {
+      "id": 3,
       "itemName": "Crispy D'Stick",
-      "itemPrice": 90
+      "itmePrice": 100
+    },
+    {
+      "id": 4,
+      "itemName": "Nuggets 3 pc.",
+      "itmePrice": 90
+    },
+    {
+      "id": 5,
+      "itemName": "Nuggets 5 pc.",
+      "itmePrice": 140
+    },
+    {
+      "id": 6,
+      "itemName": "Pops",
+      "itmePrice": 100
     },
     {
       "id": 7,
-      "itemName": "Crunchy Strips",
-      "itemPrice": 140
+      "itemName": "Lollies 4 pc.",
+      "itmePrice": 100
     },
     {
       "id": 8,
-      "itemName": "Chicken Nuggets 3 pc.",
-      "itemPrice": 60
-    },
-    {
-      "id": 9,
-      "itemName": "Chicken Nuggets 5 pc.",
-      "itemPrice": 100
-    },
-    {
-      "id": 10,
-      "itemName": "Chicken Pops",
-      "itemPrice": 100
-    },
-    {
-      "id": 11,
-      "itemName": "BBQ Wings",
-      "itemPrice": 130
-    },
-    {
-      "id": 12,
-      "itemName": "Chicken Lollies",
-      "itemPrice": 80
+      "itemName": "Jumbo Lollies 4 pc.",
+      "itmePrice": 150
     }
   ],
   "sides": [
     {
       "id": 1,
       "itemName": "French Fries Salted R/L",
-      "itemPrice": "70 / 90"
+      "itemPrice": "80 / 100"
     },
     {
       "id": 2,
       "itemName": "French Fries Spicy R/L",
-      "itemPrice": "95 / 105"
+      "itemPrice": "100 / 110"
     },
     {
       "id": 3,
       "itemName": "Potato Wedges",
-      "itemPrice": 130
-    },
-    {
-      "id": 4,
-      "itemName": "Chilly Garlic Potato Shots",
-      "itemPrice": 110
+      "itemPrice": 140
     }
   ],
   "tctCombo": [
     {
       "id": 1,
-      "itemName": "Chicken Burger + Coke(m)",
-      "itemPrice": 165
+      "itemName": "Grill Chicken Burger + Coke(m)",
+      "itemPrice": 175
     },
     {
       "id": 2,
-      "itemName": "Chicken Burger + Fries(R) + Coke(m)",
-      "itemPrice": 235
+      "itemName": "Crispy Chicken Burger + Coke(m)",
+      "itemPrice": 175
     },
     {
       "id": 3,
-      "itemName": "Chicken Burger + Fries(R) + Strips + Coke(m)",
-      "itemPrice": 375
+      "itemName": "Grill Chicken Burger + Fries(R) + Coke(m)",
+      "itemPrice": 255
+    },
+    {
+      "id": 4,
+      "itemName": "Crispy Chicken Burger + Fries(R) + Coke(m)",
+      "itmePrice": 255
+    },
+    {
+      "id": 5,
+      "itemName": "Grill Burger + Fries(R) + Strips(2pc) + Coke(M)",
+      "itmePrice": 329
+    },
+    {
+      "id": 6,
+      "itemName": "Crispy Burger + Fries(R) + Strips(2pc) + Coke(M)",
+      "itmePrice": 329
+    },
+    {
+      "id": 7,
+      "itemName": "1 Biryani + Coke(m) + Strips(2pc)",
+      "itemPrice": 329
     }
   ],
   "tctMealForTwo": [
     {
       "id": 1,
-      "itemName": "2 Chicken Burger + 1 Fires(R) + 2 Coke",
-      "itemPrice": 399
+      "itemName": "1 Biryani + Strips(2pc) + 2 Coke(m)",
+      "itemPrice": 359
     },
     {
       "id": 2,
-      "itemName": "2 TCT's Special Burger + 2 Coke",
-      "itemPrice": 789
+      "itemName": "2 Chicken Burger + 1 Fries(r) + 2 Coke(m)",
+      "itemPrice": 429
     }
   ],
   "dips": [
     {
       "id": 1,
-      "itemName": "BBQ Dips",
-      "itemPrice": 20
+      "itemName": "Mayonnaise Dip",
+      "itemPrice": 10
     },
     {
       "id": 2,
-      "itemName": "Cheesy Dips",
+      "itemName": "BBQ Dip",
       "itemPrice": 20
-    }
-  ],
-  "special": [
+    },
     {
-      "id": 1,
-      "itemName": "Chicken Sizler",
-      "itemPrice": 200
+      "id": 3,
+      "itemName": "Cheesy Dip",
+      "itemPrice": 20
     }
   ],
   "soup": [
     {
       "id": 1,
       "itemName": "Chicken Soup",
-      "itemPrice": 80
+      "itemPrice": 100
     },
     {
       "id": 2,
       "itemName": "Veg Soup",
-      "itemPrice": 70
+      "itemPrice": 80
+    }
+  ],
+  "tctBucket": [
+    {
+      "id": 1,
+      "itemName": "Strips(2pc) + Chicken Lollies(2pc) + Nuggets(2pc) + 2 Crispy D'Stick + 2 Coke(m)",
+      "itemPrice": 439
+    },
+    {
+      "id": 2,
+      "itemName": "Strips(2pc) + Chicken Lollies(2pc) + Nuggets(2pc) + 1 Crispy D'Stick + 1 BBQ Grill Thigh + Fries(r) + 2 Coke(m)",
+      "itemPrice": 499
+    }
+  ],
+  "startersVeg": [
+    {
+      "id": 1,
+      "itemName": "Roasted Papad",
+      "itemPrice": 40
+    },
+    {
+      "id": 2,
+      "itemName": "Baby Corn Mushroom Black Pepper",
+      "itemPrice": 200
+    },
+    {
+      "id": 3,
+      "itemName": "Gobi Manchurian",
+      "itemPrice": 150
+    },
+    {
+      "id": 4,
+      "itemName": "Crispy Chilly Paneer",
+      "itemPrice": 200
+    },
+    {
+      "id": 5,
+      "itemName": "Paneer Manchurian",
+      "itemPrice": 200
+    },
+    {
+      "id": 6,
+      "itemName": "Tender Coconut Chilly",
+      "itemPrice": 100
+    }
+  ],
+  "startersNonVeg": [
+    {
+      "id": 1,
+      "itemName": "Black Pepper Chicken",
+      "itemPrice": 200
+    },
+    {
+      "id": 2,
+      "itemName": "Chicken Hot Garlic",
+      "itemPrice": 200
+    },
+    {
+      "id": 3,
+      "itemName": "Crispy Chicken",
+      "itemPrice": 200
+    },
+    {
+      "id": 4,
+      "itemName": "Chicken 65",
+      "itemPrice": 200
+    },
+    {
+      "id": 5,
+      "itemName": "Chicken Chilly",
+      "itemPrice": 200
+    },
+    {
+      "id": 6,
+      "itemName": "Chicken Manchurian",
+      "itemPrice": 200
+    },
+    {
+      "id": 7,
+      "itemName": "Chicken Lollipop 6pc.",
+      "itemPrice": 200
+    },
+    {
+      "id": 8,
+      "itemName": "Schezwan Lollipop",
+      "itemPrice": 220
+    },
+    {
+      "id": 9,
+      "itemName": "Indian Chilly",
+      "itemPrice": 200
+    },
+    {
+      "id": 10,
+      "itemName": "Chicken Sukkha",
+      "itemPrice": 200
+    }
+  ],
+  "fishStarters": [
+    {
+      "id": 1,
+      "itemName": "Squids Golden Fry",
+      "itemPrice": "APS"
+    },
+    {
+      "id": 2,
+      "itemName": "Prawns Golden Fry",
+      "itemPrice": "APS"
+    },
+    {
+      "id": 3,
+      "itemName": "Squids Black Pepper",
+      "itemPrice" : "APS"
+    }
+  ],
+  "mainCourseVeg": [
+    {
+      "id": 1,
+      "itemName": "Veg Fried Rice",
+      "itemPrice": 160
+    },
+    {
+      "id": 2,
+      "itemName": "Burn Garlic Rice",
+      "itemPrice": 170
+    },
+    {
+      "id": 3,
+      "itemName": "Veg Biryani (Tawa)",
+      "itemPrice": 200
+    },
+    {
+      "id": 4,
+      "itemName": "Veg Kolhapuri",
+      "itemPrice": 150
+    },
+    {
+      "id": 5,
+      "itemName": "Veg Masala",
+      "itemPrice": 150
+    },
+    {
+      "id": 6,
+      "itemName": "Veg Kadai",
+      "itemPrice": 150
+    },
+    {
+      "id": 7,
+      "itemName": "Potato Cafreal",
+      "itemPrice": 160
+    },
+    {
+      "id": 8,
+      "itemName": "Paneer Cafreal",
+      "itemPrice": 180
+    },
+    {
+      "id": 9,
+      "itemName": "Paneer Masala",
+      "itemPrice": 180
+    },
+    {
+      "id": 10,
+      "itemName": "Paneer Kadai",
+      "itemPrice": 180
+    },
+    {
+      "id": 11,
+      "itemName": "Mutter Paneer",
+      "itemPrice" : 180
+    }
+  ],
+  "mainCourseNonVeg": [
+    {
+      "id": 1,
+      "itemName": "Chicken Fried Rice",
+      "itemPrice": 180
+    },
+    {
+      "id": 2,
+      "itemName": "Schezwan Fried Rice",
+      "itemPrice": 190
+    },
+    {
+      "id": 3,
+      "itemName": "Chicken Biryani",
+      "itemPrice": 200
+    },
+    {
+      "id": 4,
+      "itemName": "Tripple Schezwan Rice",
+      "itemPrice": 200
+    },
+    {
+      "id": 5,
+      "itemName": "Chicken Kolhapuri",
+      "itemPrice": 200
+    },
+    {
+      "id": 6,
+      "itemName": "Chicken Masala",
+      "itemPrice": 200
+    },
+    {
+      "id": 7,
+      "itemName": "Chicken Cafreal",
+      "itemPrice": 220
+    },
+    {
+      "id": 8,
+      "itemName": "Butter Chicken",
+      "itemPrice": 220
+    },
+    {
+      "id": 9,
+      "itemName": "Chicken Kadai",
+      "itemPrice": 220
+    },
+    {
+      "id": 10,
+      "itemName": "Chicken Tikka Masala",
+      "itemPrice": 220
+    },
+    {
+      "id": 11,
+      "itemName": "Chicken Bukhara",
+      "itemPrice": 230
+    }
+  ],
+  "thali": [
+    {
+      "id": 1,
+      "itemName": "Veg Thali",
+      "itemPrice": 100
+    },
+    {
+      "id": 2,
+      "itemName": "Fish Thali",
+      "itemPrice": "APS"
+    },
+    {
+      "id": 3,
+      "itemName": "Chicken thali",
+      "itemPrice": 200
+    },
+    {
+      "id": 4,
+      "itemName": "Extra Rice",
+      "itemPrice": "APS"
+    }
+  ],
+  "fishFry": [
+    {
+      "id": 1,
+      "itemName": "Kingfish",
+      "itemPrice": " "
+    },
+    {
+      "id": 2,
+      "itemName": "Verlyo",
+      "itemPrice": " "
+    },
+    {
+      "id": 3,
+      "itemName": "Prawns",
+      "itemPrice": " "
+    },
+    {
+      "id": 4,
+      "itemName": "Lepo",
+      "itemPrice": " "
+    },
+    {
+      "id": 5,
+      "itemName": "Roshado Mackerel",
+      "itemPrice": " "
+    },
+    {
+      "id": 6,
+      "itemName": "Shinanyo",
+      "itemPrice": " "
+    },
+    {
+      "id": 7,
+      "itemName": "Modso",
+      "itemPrice": " "
+    },
+    {
+      "id": 8,
+      "itemName": "Chonak",
+      "itemPrice": " "
+    },
+    {
+      "id": 9,
+      "itemName": "Tamusso",
+      "itemPrice": " "
+    },
+    {
+      "id": 10,
+      "itemName": "Paplet",
+      "itemPrice": " "
+    }
+  ],
+  "indianBread": [
+    {
+      "id": 1,
+      "itemName": "Chapati",
+      "itemPrice": 20
+    },
+    {
+      "id": 2,
+      "itemName": "Multi Grain Chapati",
+      "itemPrice": 35
+    },
+    {
+      "id": 3,
+      "itemName": "Butter Paratha",
+      "itemPrice": 25
     }
   ]
 }
