@@ -274,42 +274,42 @@
     {
       "id": 1,
       "itemName": "Crunchy Strips 4 pc.",
-      "itmePrice": 155
+      "itemPrice": 155
     },
     {
       "id": 2,
       "itemName": "Crispy thigh",
-      "itmePrice": 100
+      "itemPrice": 100
     },
     {
       "id": 3,
       "itemName": "Crispy D'Stick",
-      "itmePrice": 100
+      "itemPrice": 100
     },
     {
       "id": 4,
       "itemName": "Nuggets 3 pc.",
-      "itmePrice": 90
+      "itemPrice": 90
     },
     {
       "id": 5,
       "itemName": "Nuggets 5 pc.",
-      "itmePrice": 140
+      "itemPrice": 140
     },
     {
       "id": 6,
       "itemName": "Pops",
-      "itmePrice": 100
+      "itemPrice": 100
     },
     {
       "id": 7,
       "itemName": "Lollies 4 pc.",
-      "itmePrice": 100
+      "itemPrice": 100
     },
     {
       "id": 8,
       "itemName": "Jumbo Lollies 4 pc.",
-      "itmePrice": 150
+      "itemPrice": 150
     }
   ],
   "sides": [
@@ -348,17 +348,17 @@
     {
       "id": 4,
       "itemName": "Crispy Chicken Burger + Fries(R) + Coke(m)",
-      "itmePrice": 255
+      "itemPrice": 255
     },
     {
       "id": 5,
       "itemName": "Grill Burger + Fries(R) + Strips(2pc) + Coke(M)",
-      "itmePrice": 329
+      "itemPrice": 329
     },
     {
       "id": 6,
       "itemName": "Crispy Burger + Fries(R) + Strips(2pc) + Coke(M)",
-      "itmePrice": 329
+      "itemPrice": 329
     },
     {
       "id": 7,

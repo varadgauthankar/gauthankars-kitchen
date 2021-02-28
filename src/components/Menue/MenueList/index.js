@@ -69,7 +69,7 @@ const [indianBread, setIndianBread] = useState([]);
     setSides(response.sides);
     setTctCombos(response.tctCombo);
     setTctMealForTwos(response.tctMealForTwo);
-setIndianBread(response.indianBread);
+    setIndianBread(response.indianBread);
     setGrillChicken(response.grillChicken);
     setCrispyChicken(response.crispyChicken);
     setStartersVeg(response.startersVeg);
@@ -80,6 +80,7 @@ setIndianBread(response.indianBread);
     setThali(response.thali);
     setfishFry(response.fishFry);
     setTctBucket(response.tctBucket);
+
   };
 
   useEffect(() => {
@@ -87,6 +88,7 @@ setIndianBread(response.indianBread);
       .then((data) => data.json())
       .then((data) => {
         setMenueCategories(data);
+
         setIsLoaded(true);
       })
       .catch((err) => {
